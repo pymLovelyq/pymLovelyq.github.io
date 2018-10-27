@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*��������ɫ*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*��Ӱ��ɫ*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*�ϱ߿���ɫ*/
+        border-left-color: #1E92FB;    /*��߿���ɫ*/
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+
+
+  <meta name="description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta name="keywords" content="算法,面试,C语言,C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法与数据结构+一点点ACM从入门到进阶吐血整理推荐书单（珍藏版）">
+<meta property="og:url" content="http://yoursite.com/2018/10/22/Algorithm/index.html">
+<meta property="og:site_name" content="极客侠栈">
+<meta property="og:description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd4245d7b09e.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd4245d4bf6b.png">
+<meta property="og:updated_time" content="2018-10-27T08:48:58.450Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="算法与数据结构+一点点ACM从入门到进阶吐血整理推荐书单（珍藏版）">
+<meta name="twitter:description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta name="twitter:image" content="https://i.loli.net/2018/10/27/5bd4245d7b09e.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/22/Algorithm/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>算法与数据结构+一点点ACM从入门到进阶吐血整理推荐书单（珍藏版） | 极客侠栈</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">极客侠栈</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/22/Algorithm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="极客侠栈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="极客侠栈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">算法与数据结构+一点点ACM从入门到进阶吐血整理推荐书单（珍藏版）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-22 10:36:31" itemprop="dateCreated datePublished" datetime="2018-10-22T10:36:31+08:00">2018-10-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-27 16:48:58" itemprop="dateModified" datetime="2018-10-27T16:48:58+08:00">2018-10-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<h1 id="前言：技术书阅读方法论"><a href="#前言：技术书阅读方法论" class="headerlink" title="前言：技术书阅读方法论"></a>前言：技术书阅读方法论</h1><h2 id="一-速读一遍（最好在1-2天内完成）"><a href="#一-速读一遍（最好在1-2天内完成）" class="headerlink" title="一.速读一遍（最好在1~2天内完成）"></a>一.速读一遍（最好在1~2天内完成）</h2><p>人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。<br> 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。</p>
+<h2 id="二-精读一遍（在2周内看完）"><a href="#二-精读一遍（在2周内看完）" class="headerlink" title="二.精读一遍（在2周内看完）"></a>二.精读一遍（在2周内看完）</h2><p>有了前面速读的感觉，第二次看会有慢慢深刻了思想和意识的作用，具体为什么不要问我，去问30年后的神经大脑专家，现在人类可能还没有总结出为什么大脑对记忆的完全方法论，但是，就像我们专业程序员，打代码都是先实践，然后就渐渐懂了过程，慢慢懂了原理，所以第二遍读的时候稍微慢下来，2周内搞定。记住一句话：没看完一个章节后，总结一下这个章节讲了啥。很关键。</p>
+<h2 id="三-实践（在整个过程中都要）"><a href="#三-实践（在整个过程中都要）" class="headerlink" title="三.实践（在整个过程中都要）"></a>三.实践（在整个过程中都要）</h2><p>实践的时候，要注意不用都去实践，最好看着书，敲下代码，把重点的内容敲一遍有个肌肉记忆就很不错了。<br> 以及到自己做过的项目中去把每个有涉及的原理的代码，研究一遍，就可以了</p>
+</blockquote>
+<blockquote>
+<p>一共四个系列整整50+本电子书，找了好久终于齐了，如果都能看完看懂且科学的总结外加合理的实践，相信未来你的技术路会更好走，当然阿里巴巴，腾讯，阿里这些的Offer不将是梦，除了多看点技术书，你觉得还有什么能拿出来和985,211的朋友比呢？<br>最近在学习算法和数据结构+涉及一点acm方面的知识，看到一篇好的关于数据结构和算法的书籍，如果计算机系只开三门课，那么这三门课就一定是：离散数学，数据结构与算法，编译原理。如果只开一门课，那剩下的就一定是：数据结构与算法。Niklaus Wirth说：算法＋数据结构＝程序，不说废话了，下面列出一份数据结构+算法书单，从入门到进阶说起。 </p>
+</blockquote>
+<p>先发个几个G的资源截图吧，感觉不错的点个小心心~<br><img src="https://i.loli.net/2018/10/27/5bd4245d7b09e.png" alt="1.png"><br><img src="https://i.loli.net/2018/10/27/5bd4245d4bf6b.png" alt="2.png"></p>
+<blockquote>
+<p><strong>百度网盘链接：<a href="https://pan.baidu.com/s/1pL6I1w7uOyyYWJ-8LukCRw" target="_blank" rel="noopener">https://pan.baidu.com/s/1pL6I1w7uOyyYWJ-8LukCRw</a><br>提取码：q86s<br>备注：里面已经顺便整理压缩好，需要下载后才可以打开，网盘直接打开会显示损坏。</strong></p>
+</blockquote>
+<blockquote>
+<p>以下是每本书的推荐语，清楚自己缺的是什么，就下定决心去补吧，一个好工作意味着高收入，投资自己的时间换来更宝贵的东西。</p>
+</blockquote>
+<h1 id="一-入门系列"><a href="#一-入门系列" class="headerlink" title="一.入门系列"></a>一.入门系列</h1><p>推荐理由：通过图片，打比方等通俗易懂的方法讲述算法的书籍让你能达到懂一些基础算法，线性表，堆栈，队列，树，图，DP算法，背包问题等，不要求会实现，但是看过以下这些书对于之后实现算法打下坚实的思维基础。</p>
+<h2 id="1-1《啊哈！算法-啊哈磊扫描版》"><a href="#1-1《啊哈！算法-啊哈磊扫描版》" class="headerlink" title="1.1《啊哈！算法 啊哈磊扫描版》"></a>1.1《啊哈！算法 啊哈磊扫描版》</h2><h2 id="1-2《算法图解》"><a href="#1-2《算法图解》" class="headerlink" title="1.2《算法图解》"></a>1.2《算法图解》</h2><h2 id="1-3《妙趣横生的算法（C语言实现-第2版）》"><a href="#1-3《妙趣横生的算法（C语言实现-第2版）》" class="headerlink" title="1.3《妙趣横生的算法（C语言实现 第2版）》"></a>1.3《妙趣横生的算法（C语言实现 第2版）》</h2><h2 id="1-4《趣学算法》"><a href="#1-4《趣学算法》" class="headerlink" title="1.4《趣学算法》"></a>1.4《趣学算法》</h2><h2 id="1-5《大话数据结构》"><a href="#1-5《大话数据结构》" class="headerlink" title="1.5《大话数据结构》"></a>1.5《大话数据结构》</h2><h2 id="1-6《算法神探完整版》"><a href="#1-6《算法神探完整版》" class="headerlink" title="1.6《算法神探完整版》"></a>1.6《算法神探完整版》</h2><h2 id="1-7《算法帝国》"><a href="#1-7《算法帝国》" class="headerlink" title="1.7《算法帝国》"></a>1.7《算法帝国》</h2><h2 id="1-8《算法设计与分析基础第3版》"><a href="#1-8《算法设计与分析基础第3版》" class="headerlink" title="1.8《算法设计与分析基础第3版》"></a>1.8《算法设计与分析基础第3版》</h2><h1 id="二-进阶系列"><a href="#二-进阶系列" class="headerlink" title="二.进阶系列"></a>二.进阶系列</h1><p>推荐理由：在基本入门算法书的调教和领悟下，渐渐懂得一些基础算法是什么，现在就是进阶系列可以参阅，力荐《算法导论》《编程原本》，经典款不解释，当然这些书最好是在入门后再看合适，还有王晓东那本算法书也很不错，有几个版本，可以挑选看还附有课后答案。</p>
+<h2 id="2-1《算法导论英文版第三版》"><a href="#2-1《算法导论英文版第三版》" class="headerlink" title="2.1《算法导论英文版第三版》"></a>2.1《算法导论<em>英文版</em>第三版》</h2><h2 id="2-1《算法导论中文版》"><a href="#2-1《算法导论中文版》" class="headerlink" title="2.1《算法导论中文版》"></a>2.1《算法导论中文版》</h2><h2 id="2-2《算法-第4版-》"><a href="#2-2《算法-第4版-》" class="headerlink" title="2.2《算法 (第4版)》"></a>2.2《算法 (第4版)》</h2><h2 id="2-3《数据结构与算法-Java版》"><a href="#2-3《数据结构与算法-Java版》" class="headerlink" title="2.3《数据结构与算法 Java版》"></a>2.3《数据结构与算法 Java版》</h2><h2 id="2-4《Algorithms算法概论中文版》"><a href="#2-4《Algorithms算法概论中文版》" class="headerlink" title="2.4《Algorithms算法概论中文版》"></a>2.4《Algorithms算法概论中文版》</h2><h2 id="2-5《算法心得-高效算法的奥秘-原书第2版-》"><a href="#2-5《算法心得-高效算法的奥秘-原书第2版-》" class="headerlink" title="2.5《算法心得-高效算法的奥秘(原书第2版)》"></a>2.5《算法心得-高效算法的奥秘(原书第2版)》</h2><h2 id="2-6《计算机程序设计艺术-第1卷：基本算法（第三版）高清中文版》"><a href="#2-6《计算机程序设计艺术-第1卷：基本算法（第三版）高清中文版》" class="headerlink" title="2.6《计算机程序设计艺术 第1卷：基本算法（第三版）高清中文版》"></a>2.6《计算机程序设计艺术 第1卷：基本算法（第三版）高清中文版》</h2><h2 id="2-7《计算机程序设计艺术-第2卷：半数值算法（第三版）高清中文版》"><a href="#2-7《计算机程序设计艺术-第2卷：半数值算法（第三版）高清中文版》" class="headerlink" title="2.7《计算机程序设计艺术 第2卷：半数值算法（第三版）高清中文版》"></a>2.7《计算机程序设计艺术 第2卷：半数值算法（第三版）高清中文版》</h2><h2 id="2-8《计算机程序设计艺术-第3卷：排序与查找（第二版）高清中文版》"><a href="#2-8《计算机程序设计艺术-第3卷：排序与查找（第二版）高清中文版》" class="headerlink" title="2.8《计算机程序设计艺术 第3卷：排序与查找（第二版）高清中文版》"></a>2.8《计算机程序设计艺术 第3卷：排序与查找（第二版）高清中文版》</h2><h2 id="2-9《数据结构（C语言版）-严蔚敏-吴伟民-清华大学出版社-2007》"><a href="#2-9《数据结构（C语言版）-严蔚敏-吴伟民-清华大学出版社-2007》" class="headerlink" title="2.9《数据结构（C语言版）-严蔚敏 吴伟民, 清华大学出版社, 2007》"></a>2.9《数据结构（C语言版）-严蔚敏 吴伟民, 清华大学出版社, 2007》</h2><h2 id="2-9《计算机算法设计与分析-第4版-王晓东-课后答案-1-9章-》"><a href="#2-9《计算机算法设计与分析-第4版-王晓东-课后答案-1-9章-》" class="headerlink" title="2.9《计算机算法设计与分析 第4版 (王晓东) 课后答案[1-9章]》"></a>2.9《计算机算法设计与分析 第4版 (王晓东) 课后答案[1-9章]》</h2><h2 id="2-9《计算机算法设计与分析-王晓东-第三版-》"><a href="#2-9《计算机算法设计与分析-王晓东-第三版-》" class="headerlink" title="2.9《计算机算法设计与分析(王晓东)(第三版)》"></a>2.9《计算机算法设计与分析(王晓东)(第三版)》</h2><h2 id="2-9《计算机算法设计与分析-王晓东-第二版-》"><a href="#2-9《计算机算法设计与分析-王晓东-第二版-》" class="headerlink" title="2.9《计算机算法设计与分析(王晓东)(第二版)》"></a>2.9《计算机算法设计与分析(王晓东)(第二版)》</h2><h2 id="2-9《计算机算法设计与分析-第三版-课后习题答案详解》"><a href="#2-9《计算机算法设计与分析-第三版-课后习题答案详解》" class="headerlink" title="2.9《计算机算法设计与分析(第三版)课后习题答案详解》"></a>2.9《计算机算法设计与分析(第三版)课后习题答案详解》</h2><h2 id="2-10《Java数据结构和算法-第二版-》"><a href="#2-10《Java数据结构和算法-第二版-》" class="headerlink" title="2.10《Java数据结构和算法(第二版)》"></a>2.10《Java数据结构和算法(第二版)》</h2><h2 id="2-11《编程原本》"><a href="#2-11《编程原本》" class="headerlink" title="2.11《编程原本》"></a>2.11《编程原本》</h2><h2 id="2-12《算法设计手册第2版-中文版330页》"><a href="#2-12《算法设计手册第2版-中文版330页》" class="headerlink" title="2.12《算法设计手册第2版 中文版330页》"></a>2.12《算法设计手册第2版 中文版330页》</h2><h2 id="2-13《JavaScrit数据结构与算法（第2版）》"><a href="#2-13《JavaScrit数据结构与算法（第2版）》" class="headerlink" title="2.13《JavaScrit数据结构与算法（第2版）》"></a>2.13《JavaScrit数据结构与算法（第2版）》</h2><h2 id="2-14《数据结构与算法分析：C语言描述（原书第2版）》"><a href="#2-14《数据结构与算法分析：C语言描述（原书第2版）》" class="headerlink" title="2.14《数据结构与算法分析：C语言描述（原书第2版）》"></a>2.14《数据结构与算法分析：C语言描述（原书第2版）》</h2><h2 id="2-15《数据结构与算法Python语言描述裘宗燕编著北京：机械工业出版》"><a href="#2-15《数据结构与算法Python语言描述裘宗燕编著北京：机械工业出版》" class="headerlink" title="2.15《数据结构与算法Python语言描述裘宗燕编著北京：机械工业出版》"></a>2.15《数据结构与算法Python语言描述<em>裘宗燕编著</em>北京：机械工业出版》</h2><h1 id="三-算法题系列"><a href="#三-算法题系列" class="headerlink" title="三.算法题系列"></a>三.算法题系列</h1><p>推荐理由：一些题海讲解具体的算法思想应用在题目上是怎么求解的，想刷题的可以看看结合各大OJ+leetCode一起学习。多刷题总不会错。</p>
+<h2 id="3-1《挑战程序设计竞赛-第2版-》"><a href="#3-1《挑战程序设计竞赛-第2版-》" class="headerlink" title="3.1《挑战程序设计竞赛(第2版)》"></a>3.1《挑战程序设计竞赛(第2版)》</h2><h2 id="3-2《算法艺术与信息学竞赛-清华大学出版社-》"><a href="#3-2《算法艺术与信息学竞赛-清华大学出版社-》" class="headerlink" title="3.2《算法艺术与信息学竞赛(清华大学出版社)》"></a>3.2《算法艺术与信息学竞赛(清华大学出版社)》</h2><h2 id="3-3《算法谜题》"><a href="#3-3《算法谜题》" class="headerlink" title="3.3《算法谜题》"></a>3.3《算法谜题》</h2><h2 id="3-4《编程高手箴言》"><a href="#3-4《编程高手箴言》" class="headerlink" title="3.4《编程高手箴言》"></a>3.4《编程高手箴言》</h2><h1 id="四-实用工作系列"><a href="#四-实用工作系列" class="headerlink" title="四.实用工作系列"></a>四.实用工作系列</h1><p>推荐理由：在面试和工作中经常要用到的算法讲解，以及一些过来人工程师的心血总结，建议在面试前翻看，提升思维广度，外加一些实操。</p>
+<h2 id="4-10《算法与数据结构-实用算法基础教程》"><a href="#4-10《算法与数据结构-实用算法基础教程》" class="headerlink" title="4.10《算法与数据结构-实用算法基础教程》"></a>4.10《算法与数据结构-实用算法基础教程》</h2><h2 id="4-1《编程之法-面试和算法心得》"><a href="#4-1《编程之法-面试和算法心得》" class="headerlink" title="4.1《编程之法  面试和算法心得》"></a>4.1《编程之法  面试和算法心得》</h2><h2 id="4-2《程序员代码面试指南-IT名企算法与数据结构题目最优解-》"><a href="#4-2《程序员代码面试指南-IT名企算法与数据结构题目最优解-》" class="headerlink" title="4.2《程序员代码面试指南 IT名企算法与数据结构题目最优解 》"></a>4.2《程序员代码面试指南 IT名企算法与数据结构题目最优解 》</h2><h2 id="4-3《算法Ⅰ-Ⅳ-C-实现-–基础、数据结构、排序和搜索-第三版-》"><a href="#4-3《算法Ⅰ-Ⅳ-C-实现-–基础、数据结构、排序和搜索-第三版-》" class="headerlink" title="4.3《算法Ⅰ-Ⅳ(C++ 实现)–基础、数据结构、排序和搜索(第三版)》"></a>4.3《算法Ⅰ-Ⅳ(C++ 实现)–基础、数据结构、排序和搜索(第三版)》</h2><h2 id="4-4《程序员实用算法》"><a href="#4-4《程序员实用算法》" class="headerlink" title="4.4《程序员实用算法》"></a>4.4《程序员实用算法》</h2><h2 id="4-5《编程珠玑（第2版）》"><a href="#4-5《编程珠玑（第2版）》" class="headerlink" title="4.5《编程珠玑（第2版）》"></a>4.5《编程珠玑（第2版）》</h2><h2 id="4-6《编程之美》"><a href="#4-6《编程之美》" class="headerlink" title="4.6《编程之美》"></a>4.6《编程之美》</h2><h2 id="4-7《程序调试思想与实践》"><a href="#4-7《程序调试思想与实践》" class="headerlink" title="4.7《程序调试思想与实践》"></a>4.7《程序调试思想与实践》</h2><h2 id="4-8《-改变未来的九大算法-管策》"><a href="#4-8《-改变未来的九大算法-管策》" class="headerlink" title="4.8《[改变未来的九大算法]管策》"></a>4.8《[改变未来的九大算法]管策》</h2><h2 id="4-9《排序算法汇总》"><a href="#4-9《排序算法汇总》" class="headerlink" title="4.9《排序算法汇总》"></a>4.9《排序算法汇总》</h2><h1 id="五-算法奇门遁甲系列"><a href="#五-算法奇门遁甲系列" class="headerlink" title="五.算法奇门遁甲系列"></a>五.算法奇门遁甲系列</h1><p>推荐理由：包括一些可能在图形学，游戏设计，数据挖掘方面的算法书，偏冷门，乃大佬可以赏读的系列书籍</p>
+<h2 id="5-1《matlab数学建模算法全收录-799页-47M-超清书签版》"><a href="#5-1《matlab数学建模算法全收录-799页-47M-超清书签版》" class="headerlink" title="5.1《matlab数学建模算法全收录 799页 47M 超清书签版》"></a>5.1《matlab数学建模算法全收录 799页 47M 超清书签版》</h2><h2 id="5-2《常用数据挖掘算法总结及ython实现》"><a href="#5-2《常用数据挖掘算法总结及ython实现》" class="headerlink" title="5.2《常用数据挖掘算法总结及ython实现》"></a>5.2《常用数据挖掘算法总结及ython实现》</h2><h2 id="5-3《机器学习十大算法》"><a href="#5-3《机器学习十大算法》" class="headerlink" title="5.3《机器学习十大算法》"></a>5.3《机器学习十大算法》</h2><h2 id="5-4《计算机程序设计艺术-The-Art-o-Comuter-rogramming-第2卷（第3版）英文版》"><a href="#5-4《计算机程序设计艺术-The-Art-o-Comuter-rogramming-第2卷（第3版）英文版》" class="headerlink" title="5.4《计算机程序设计艺术 The Art o Comuter rogramming 第2卷（第3版）英文版》"></a>5.4《计算机程序设计艺术 The Art o Comuter rogramming 第2卷（第3版）英文版》</h2><h2 id="5-5《算法百科-Encycloeia-o-Algorithms》"><a href="#5-5《算法百科-Encycloeia-o-Algorithms》" class="headerlink" title="5.5《算法百科 Encycloeia o Algorithms》"></a>5.5《算法百科 Encycloeia o Algorithms》</h2><h2 id="5-6《智能Web算法-中文版-》"><a href="#5-6《智能Web算法-中文版-》" class="headerlink" title="5.6《智能Web算法(中文版)》"></a>5.6《智能Web算法(中文版)》</h2><h2 id="5-7《现代计算机常用数据结构与算法》"><a href="#5-7《现代计算机常用数据结构与算法》" class="headerlink" title="5.7《现代计算机常用数据结构与算法》"></a>5.7《现代计算机常用数据结构与算法》</h2><h2 id="5-8《数据挖掘原理与算法》"><a href="#5-8《数据挖掘原理与算法》" class="headerlink" title="5.8《数据挖掘原理与算法》"></a>5.8《数据挖掘原理与算法》</h2><h2 id="5-9《计算几何–算法与应用-中文第三版-》"><a href="#5-9《计算几何–算法与应用-中文第三版-》" class="headerlink" title="5.9《计算几何–算法与应用(中文第三版)》"></a>5.9《计算几何–算法与应用(中文第三版)》</h2><h2 id="5-10《数值最优化算法（numerical-otimization）》"><a href="#5-10《数值最优化算法（numerical-otimization）》" class="headerlink" title="5.10《数值最优化算法（numerical otimization）》"></a>5.10《数值最优化算法（numerical otimization）》</h2><h2 id="5-11《计算机图形学原理及算法教程-Visual-C-版-和青芳-清华大学》"><a href="#5-11《计算机图形学原理及算法教程-Visual-C-版-和青芳-清华大学》" class="headerlink" title="5.11《计算机图形学原理及算法教程(Visual C++版)-和青芳 清华大学》"></a>5.11《计算机图形学原理及算法教程(Visual C++版)-和青芳 清华大学》</h2><h2 id="5-12《算法概论（Algorithm-》"><a href="#5-12《算法概论（Algorithm-》" class="headerlink" title="5.12《算法概论（Algorithm)》"></a>5.12《算法概论（Algorithm)》</h2><h2 id="5-13《数据结构教程电子版-》"><a href="#5-13《数据结构教程电子版-》" class="headerlink" title="5.13《数据结构教程电子版 》"></a>5.13《数据结构教程电子版 》</h2><h2 id="5-14《图论中的常用经典算法》"><a href="#5-14《图论中的常用经典算法》" class="headerlink" title="5.14《图论中的常用经典算法》"></a>5.14《图论中的常用经典算法》</h2><p><br></p>
+<h1 id="总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。"><a href="#总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。" class="headerlink" title="总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。"></a>总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。</h1><blockquote>
+<p><strong>百度网盘链接：<a href="https://pan.baidu.com/s/1pL6I1w7uOyyYWJ-8LukCRw" target="_blank" rel="noopener">https://pan.baidu.com/s/1pL6I1w7uOyyYWJ-8LukCRw</a><br>提取码：q86s<br>备注：里面已经顺便整理压缩好，需要下载后才可以打开，网盘直接打开可能会显示损坏。</strong></p>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p>附java从入门SE到进阶EE推荐书籍50+本：<br><a href="https://pymlovelyq.github.io/2018/10/06/java/" target="_blank" rel="noopener">https://pymlovelyq.github.io/2018/10/06/java/</a><br></p>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>随心而赏，重在分享。♥(ˆ◡ˆԅ)</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="极客侠栈 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="极客侠栈 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># </i>算法</a>
+          
+            <a href="/tags/面试/" rel="tag"># </i>面试</a>
+          
+            <a href="/tags/C语言/" rel="tag"># </i>C语言</a>
+          
+            <a href="/tags/C/" rel="tag"># </i>C++</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/21/java/" rel="next" title="Java学习之路吐血整理技术书从入门到进阶最全50+本（珍藏版)">
+                <i class="fa fa-chevron-left"></i> Java学习之路吐血整理技术书从入门到进阶最全50+本（珍藏版)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/24/CC/" rel="prev" title="C语言推荐书籍从入门到进阶带你走上大牛之路（珍藏版）">
+                C语言推荐书籍从入门到进阶带你走上大牛之路（珍藏版） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="极客侠栈" />
+            
+              <p class="site-author-name" itemprop="name">极客侠栈</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com/nav.html" title="馨客栈" target="_blank">馨客栈</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com" title="MackXin" target="_blank">MackXin</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言：技术书阅读方法论"><span class="nav-number">1.</span> <span class="nav-text">前言：技术书阅读方法论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-速读一遍（最好在1-2天内完成）"><span class="nav-number">1.1.</span> <span class="nav-text">一.速读一遍（最好在1~2天内完成）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-精读一遍（在2周内看完）"><span class="nav-number">1.2.</span> <span class="nav-text">二.精读一遍（在2周内看完）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-实践（在整个过程中都要）"><span class="nav-number">1.3.</span> <span class="nav-text">三.实践（在整个过程中都要）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一-入门系列"><span class="nav-number">2.</span> <span class="nav-text">一.入门系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1《啊哈！算法-啊哈磊扫描版》"><span class="nav-number">2.1.</span> <span class="nav-text">1.1《啊哈！算法 啊哈磊扫描版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2《算法图解》"><span class="nav-number">2.2.</span> <span class="nav-text">1.2《算法图解》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3《妙趣横生的算法（C语言实现-第2版）》"><span class="nav-number">2.3.</span> <span class="nav-text">1.3《妙趣横生的算法（C语言实现 第2版）》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4《趣学算法》"><span class="nav-number">2.4.</span> <span class="nav-text">1.4《趣学算法》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5《大话数据结构》"><span class="nav-number">2.5.</span> <span class="nav-text">1.5《大话数据结构》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6《算法神探完整版》"><span class="nav-number">2.6.</span> <span class="nav-text">1.6《算法神探完整版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-7《算法帝国》"><span class="nav-number">2.7.</span> <span class="nav-text">1.7《算法帝国》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-8《算法设计与分析基础第3版》"><span class="nav-number">2.8.</span> <span class="nav-text">1.8《算法设计与分析基础第3版》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-进阶系列"><span class="nav-number">3.</span> <span class="nav-text">二.进阶系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1《算法导论英文版第三版》"><span class="nav-number">3.1.</span> <span class="nav-text">2.1《算法导论英文版第三版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1《算法导论中文版》"><span class="nav-number">3.2.</span> <span class="nav-text">2.1《算法导论中文版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2《算法-第4版-》"><span class="nav-number">3.3.</span> <span class="nav-text">2.2《算法 (第4版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3《数据结构与算法-Java版》"><span class="nav-number">3.4.</span> <span class="nav-text">2.3《数据结构与算法 Java版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4《Algorithms算法概论中文版》"><span class="nav-number">3.5.</span> <span class="nav-text">2.4《Algorithms算法概论中文版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5《算法心得-高效算法的奥秘-原书第2版-》"><span class="nav-number">3.6.</span> <span class="nav-text">2.5《算法心得-高效算法的奥秘(原书第2版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6《计算机程序设计艺术-第1卷：基本算法（第三版）高清中文版》"><span class="nav-number">3.7.</span> <span class="nav-text">2.6《计算机程序设计艺术 第1卷：基本算法（第三版）高清中文版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7《计算机程序设计艺术-第2卷：半数值算法（第三版）高清中文版》"><span class="nav-number">3.8.</span> <span class="nav-text">2.7《计算机程序设计艺术 第2卷：半数值算法（第三版）高清中文版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-8《计算机程序设计艺术-第3卷：排序与查找（第二版）高清中文版》"><span class="nav-number">3.9.</span> <span class="nav-text">2.8《计算机程序设计艺术 第3卷：排序与查找（第二版）高清中文版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-9《数据结构（C语言版）-严蔚敏-吴伟民-清华大学出版社-2007》"><span class="nav-number">3.10.</span> <span class="nav-text">2.9《数据结构（C语言版）-严蔚敏 吴伟民, 清华大学出版社, 2007》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-9《计算机算法设计与分析-第4版-王晓东-课后答案-1-9章-》"><span class="nav-number">3.11.</span> <span class="nav-text">2.9《计算机算法设计与分析 第4版 (王晓东) 课后答案[1-9章]》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-9《计算机算法设计与分析-王晓东-第三版-》"><span class="nav-number">3.12.</span> <span class="nav-text">2.9《计算机算法设计与分析(王晓东)(第三版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-9《计算机算法设计与分析-王晓东-第二版-》"><span class="nav-number">3.13.</span> <span class="nav-text">2.9《计算机算法设计与分析(王晓东)(第二版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-9《计算机算法设计与分析-第三版-课后习题答案详解》"><span class="nav-number">3.14.</span> <span class="nav-text">2.9《计算机算法设计与分析(第三版)课后习题答案详解》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-10《Java数据结构和算法-第二版-》"><span class="nav-number">3.15.</span> <span class="nav-text">2.10《Java数据结构和算法(第二版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-11《编程原本》"><span class="nav-number">3.16.</span> <span class="nav-text">2.11《编程原本》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-12《算法设计手册第2版-中文版330页》"><span class="nav-number">3.17.</span> <span class="nav-text">2.12《算法设计手册第2版 中文版330页》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-13《JavaScrit数据结构与算法（第2版）》"><span class="nav-number">3.18.</span> <span class="nav-text">2.13《JavaScrit数据结构与算法（第2版）》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-14《数据结构与算法分析：C语言描述（原书第2版）》"><span class="nav-number">3.19.</span> <span class="nav-text">2.14《数据结构与算法分析：C语言描述（原书第2版）》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-15《数据结构与算法Python语言描述裘宗燕编著北京：机械工业出版》"><span class="nav-number">3.20.</span> <span class="nav-text">2.15《数据结构与算法Python语言描述裘宗燕编著北京：机械工业出版》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-算法题系列"><span class="nav-number">4.</span> <span class="nav-text">三.算法题系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1《挑战程序设计竞赛-第2版-》"><span class="nav-number">4.1.</span> <span class="nav-text">3.1《挑战程序设计竞赛(第2版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2《算法艺术与信息学竞赛-清华大学出版社-》"><span class="nav-number">4.2.</span> <span class="nav-text">3.2《算法艺术与信息学竞赛(清华大学出版社)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3《算法谜题》"><span class="nav-number">4.3.</span> <span class="nav-text">3.3《算法谜题》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4《编程高手箴言》"><span class="nav-number">4.4.</span> <span class="nav-text">3.4《编程高手箴言》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-实用工作系列"><span class="nav-number">5.</span> <span class="nav-text">四.实用工作系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-10《算法与数据结构-实用算法基础教程》"><span class="nav-number">5.1.</span> <span class="nav-text">4.10《算法与数据结构-实用算法基础教程》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1《编程之法-面试和算法心得》"><span class="nav-number">5.2.</span> <span class="nav-text">4.1《编程之法  面试和算法心得》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2《程序员代码面试指南-IT名企算法与数据结构题目最优解-》"><span class="nav-number">5.3.</span> <span class="nav-text">4.2《程序员代码面试指南 IT名企算法与数据结构题目最优解 》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3《算法Ⅰ-Ⅳ-C-实现-–基础、数据结构、排序和搜索-第三版-》"><span class="nav-number">5.4.</span> <span class="nav-text">4.3《算法Ⅰ-Ⅳ(C++ 实现)–基础、数据结构、排序和搜索(第三版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4《程序员实用算法》"><span class="nav-number">5.5.</span> <span class="nav-text">4.4《程序员实用算法》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5《编程珠玑（第2版）》"><span class="nav-number">5.6.</span> <span class="nav-text">4.5《编程珠玑（第2版）》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-6《编程之美》"><span class="nav-number">5.7.</span> <span class="nav-text">4.6《编程之美》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-7《程序调试思想与实践》"><span class="nav-number">5.8.</span> <span class="nav-text">4.7《程序调试思想与实践》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-8《-改变未来的九大算法-管策》"><span class="nav-number">5.9.</span> <span class="nav-text">4.8《[改变未来的九大算法]管策》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-9《排序算法汇总》"><span class="nav-number">5.10.</span> <span class="nav-text">4.9《排序算法汇总》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五-算法奇门遁甲系列"><span class="nav-number">6.</span> <span class="nav-text">五.算法奇门遁甲系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1《matlab数学建模算法全收录-799页-47M-超清书签版》"><span class="nav-number">6.1.</span> <span class="nav-text">5.1《matlab数学建模算法全收录 799页 47M 超清书签版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2《常用数据挖掘算法总结及ython实现》"><span class="nav-number">6.2.</span> <span class="nav-text">5.2《常用数据挖掘算法总结及ython实现》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3《机器学习十大算法》"><span class="nav-number">6.3.</span> <span class="nav-text">5.3《机器学习十大算法》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4《计算机程序设计艺术-The-Art-o-Comuter-rogramming-第2卷（第3版）英文版》"><span class="nav-number">6.4.</span> <span class="nav-text">5.4《计算机程序设计艺术 The Art o Comuter rogramming 第2卷（第3版）英文版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-5《算法百科-Encycloeia-o-Algorithms》"><span class="nav-number">6.5.</span> <span class="nav-text">5.5《算法百科 Encycloeia o Algorithms》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-6《智能Web算法-中文版-》"><span class="nav-number">6.6.</span> <span class="nav-text">5.6《智能Web算法(中文版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-7《现代计算机常用数据结构与算法》"><span class="nav-number">6.7.</span> <span class="nav-text">5.7《现代计算机常用数据结构与算法》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-8《数据挖掘原理与算法》"><span class="nav-number">6.8.</span> <span class="nav-text">5.8《数据挖掘原理与算法》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-9《计算几何–算法与应用-中文第三版-》"><span class="nav-number">6.9.</span> <span class="nav-text">5.9《计算几何–算法与应用(中文第三版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-10《数值最优化算法（numerical-otimization）》"><span class="nav-number">6.10.</span> <span class="nav-text">5.10《数值最优化算法（numerical otimization）》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-11《计算机图形学原理及算法教程-Visual-C-版-和青芳-清华大学》"><span class="nav-number">6.11.</span> <span class="nav-text">5.11《计算机图形学原理及算法教程(Visual C++版)-和青芳 清华大学》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-12《算法概论（Algorithm-》"><span class="nav-number">6.12.</span> <span class="nav-text">5.12《算法概论（Algorithm)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-13《数据结构教程电子版-》"><span class="nav-number">6.13.</span> <span class="nav-text">5.13《数据结构教程电子版 》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-14《图论中的常用经典算法》"><span class="nav-number">6.14.</span> <span class="nav-text">5.14《图论中的常用经典算法》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。"><span class="nav-number">7.</span> <span class="nav-text">总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+         <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">极客侠栈</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
+<!-- ҳ����С���� -->
+<script type="text/javascript" src="/js/src/love.js"></script>
