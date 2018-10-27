@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*��������ɫ*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*��Ӱ��ɫ*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*�ϱ߿���ɫ*/
+        border-left-color: #1E92FB;    /*��߿���ɫ*/
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+
+
+  <meta name="description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta name="keywords" content="算法,前端,HTML,CSS,JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web前端书单从HTML到JS到AJAX到HTTP从框架到全栈过来人帮你走更少弯路（珍藏版）">
+<meta property="og:url" content="http://yoursite.com/2018/10/25/WebFont/index.html">
+<meta property="og:site_name" content="极客侠栈">
+<meta property="og:description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd4202a12bc0.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffc742a9.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffa547c8.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffa453c4.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffa4bb63.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffcbca13.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffa0eda7.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffb2aa2a.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffabad95.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd41ffb2ba0b.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42002e3cad.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420043010e.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420034a931.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42004890a0.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420033df0d.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42003379bb.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420047e75e.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420033ce44.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42006ed6ef.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd4201235efd.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420121b63e.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420121a4e8.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd4201239ba9.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420130bfee.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42012ed9a5.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd420140823e.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42012e6074.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42012eb9b7.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd42012e3ee9.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd4202937cb3.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd4202934a22.jpg">
+<meta property="og:updated_time" content="2018-10-27T08:33:09.354Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Web前端书单从HTML到JS到AJAX到HTTP从框架到全栈过来人帮你走更少弯路（珍藏版）">
+<meta name="twitter:description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta name="twitter:image" content="https://i.loli.net/2018/10/27/5bd4202a12bc0.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/25/WebFont/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Web前端书单从HTML到JS到AJAX到HTTP从框架到全栈过来人帮你走更少弯路（珍藏版） | 极客侠栈</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">极客侠栈</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/25/WebFont/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="极客侠栈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="极客侠栈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Web前端书单从HTML到JS到AJAX到HTTP从框架到全栈过来人帮你走更少弯路（珍藏版）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-25 10:36:31" itemprop="dateCreated datePublished" datetime="2018-10-25T10:36:31+08:00">2018-10-25</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-27 16:33:09" itemprop="dateModified" datetime="2018-10-27T16:33:09+08:00">2018-10-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<h1 id="前言：技术书阅读方法论"><a href="#前言：技术书阅读方法论" class="headerlink" title="前言：技术书阅读方法论"></a>前言：技术书阅读方法论</h1><h2 id="一-速读一遍（最好在1-2天内完成）"><a href="#一-速读一遍（最好在1-2天内完成）" class="headerlink" title="一.速读一遍（最好在1~2天内完成）"></a>一.速读一遍（最好在1~2天内完成）</h2><p>人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。<br> 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。</p>
+<h2 id="二-精读一遍（在2周内看完）"><a href="#二-精读一遍（在2周内看完）" class="headerlink" title="二.精读一遍（在2周内看完）"></a>二.精读一遍（在2周内看完）</h2><p>有了前面速读的感觉，第二次看会有慢慢深刻了思想和意识的作用，具体为什么不要问我，去问30年后的神经大脑专家，现在人类可能还没有总结出为什么大脑对记忆的完全方法论，但是，就像我们专业程序员，打代码都是先实践，然后就渐渐懂了过程，慢慢懂了原理，所以第二遍读的时候稍微慢下来，2周内搞定。记住一句话：没看完一个章节后，总结一下这个章节讲了啥。很关键。</p>
+<h2 id="三-实践（在整个过程中都要）"><a href="#三-实践（在整个过程中都要）" class="headerlink" title="三.实践（在整个过程中都要）"></a>三.实践（在整个过程中都要）</h2><p>实践的时候，要注意不用都去实践，最好看着书，敲下代码，把重点的内容敲一遍有个肌肉记忆就很不错了。<br> 以及到自己做过的项目中去把每个有涉及的原理的代码，研究一遍，就可以了</p>
+</blockquote>
+<blockquote>
+<p>前言：作为一名前端开发人员，如果你告诉我你没有看过任何关于前端的书籍，那么我完全可以认为你不是一名合格的前端开发工程师。为什么我要以“看书”来衡量合格前端的标准？因为前端作为一个特殊的极具变化与开拓性的工种，没有较强的自我学习与思考能力，很难在这激烈又纷杂的环境里存活而不被淘汰，而“看书”则是最基本的自我提升与补充知识的途径。<br>书中自有黄金屋。不管你是想涉猎前端抑或进行系统性的学习，我都推荐大家阅读前端的相关书籍。</p>
+</blockquote>
+<blockquote>
+<p><strong>40+本pdf书网盘链接：<br>链接：<a href="https://pan.baidu.com/s/1PEwnn58LZ1zfelEP14aeHw" target="_blank" rel="noopener">https://pan.baidu.com/s/1PEwnn58LZ1zfelEP14aeHw</a> 密码：y39z<br>备注：里面已经顺便整理压缩好，需要下载后才可以打开，网盘直接打开会显示损坏。</strong></p>
+</blockquote>
+<p>资源图示（下载链接如上）：<br><img src="https://i.loli.net/2018/10/27/5bd4202a12bc0.png" alt="0.png"></p>
+<blockquote>
+<p>以下是每本书的推荐语，清楚自己缺的是什么，就下定决心去补吧，一个好工作意味着高收入，投资自己的时间换来更宝贵的东西。</p>
+</blockquote>
+<h1 id="一-HTML系列书籍从入门到进阶系列"><a href="#一-HTML系列书籍从入门到进阶系列" class="headerlink" title="一.HTML系列书籍从入门到进阶系列"></a>一.HTML系列书籍从入门到进阶系列</h1><h2 id="1-《HTML5-揭秘》"><a href="#1-《HTML5-揭秘》" class="headerlink" title="1.《HTML5 揭秘》"></a>1.《HTML5 揭秘》</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffc742a9.png" alt="1.png"></p>
+<p>是知名的《HTML5:up and running》的中文译本，<br>很详细的介绍了HTML5的最新技术，如果你经常看Dive into HTML 5这个网站，肯定很了解这本书了。</p>
+<p>算是入门款书籍，不枯燥，技术层面一般，适合菜鸟看，好在对格局有一定见解。当然如果一丁点编程知识都没有，也需要在阅读的时候多补充一下，非常推荐。</p>
+<h2 id="2-《响应式Web设计-HTML5和CSS3实战》BenFrain-作者-王永强-译者"><a href="#2-《响应式Web设计-HTML5和CSS3实战》BenFrain-作者-王永强-译者" class="headerlink" title="2.《响应式Web设计:HTML5和CSS3实战》BenFrain (作者), 王永强 (译者)　"></a>2.《响应式Web设计:HTML5和CSS3实战》BenFrain (作者), 王永强 (译者)　</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffa547c8.jpg" alt="2.jpg"></p>
+<p>　全书主要是带领读者做一个小网页来写的，其实响应式的东西讲得比较少，大半内容是介绍H5和css3的基础知识。如果同时想了解H5和css3和响应式设计入门，这本书不错。</p>
+<h2 id="3-《疯狂HTML-5-CSS3-JavaScript讲义》-李刚-作者"><a href="#3-《疯狂HTML-5-CSS3-JavaScript讲义》-李刚-作者" class="headerlink" title="3.《疯狂HTML 5/CSS3/JavaScript讲义》　　李刚 (作者)　　"></a>3.《疯狂HTML 5/CSS3/JavaScript讲义》　　李刚 (作者)　　</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffa453c4.jpg" alt="3.jpg"></p>
+<p>　简介：这是一本全面介绍HTML 5、CSS 3和JavaScript前端开发技术的图书，系统地介绍了HTML 5常用的元素和属性、HTML5的表单元素和属性、HTML 5的绘图支持、HTML5的多媒体支持、CSS 3的功能和用法、最前沿的变形与动画功能等。除此之外，《疯狂HTML 5/CSS 3/JavaScript讲义》还系统地介绍了JavaScript编程知识，包括JavaScript基本语法、DOM编程，以及HTML 5新增的本地存储、离线应用、JavaScript多线程、客户端通信支持、WebSocket编程等。</p>
+<h2 id="4-《HTML5触摸界面设计与开发》-伍兹-StephenWoods-作者-覃介右-谷岳-译者）"><a href="#4-《HTML5触摸界面设计与开发》-伍兹-StephenWoods-作者-覃介右-谷岳-译者）" class="headerlink" title="4.《HTML5触摸界面设计与开发》　伍兹 (StephenWoods) (作者), 覃介右 谷岳 (译者）"></a>4.《HTML5触摸界面设计与开发》　伍兹 (StephenWoods) (作者), 覃介右 谷岳 (译者）</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffa4bb63.jpg" alt="4.jpg"></p>
+<p>简介：《HTML5触摸界面设计与开发》专注于触摸界面的开发，内容的结构和优化网站的思路大概一致。上半部分涵盖了能使各类网站，特别是移动网站变快的基本概念。书的后半部分是专门讲触摸界面的，特别是尽可能地让它们更平稳和快速。本书适合具有一定经验的Web开发者阅读参考。</p>
+<h2 id="5-《HTML5高级程序设计》"><a href="#5-《HTML5高级程序设计》" class="headerlink" title="5.《HTML5高级程序设计》"></a>5.《HTML5高级程序设计》</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffcbca13.png" alt="5.png"></p>
+<p>《HTML5 高级程序设计》是《Pro HTML5 Programming》的中文译本，写的相对比较深入，如果你对HTML5有较多了解，可以选择这本书。这本书适合有丰富编程经验的Web应用开发者。书中没有互联网发展基础知识的介绍。但是书中有许多现成的资源可以加快学习Web编程原理。当然，对于程序的的书跟平常的名著还不一样，因为自身经验不同，看法不同，需求不同，对于书的评价也不同。</p>
+<h1 id="二-CSS系列书籍从入门都进阶系列"><a href="#二-CSS系列书籍从入门都进阶系列" class="headerlink" title="二.CSS系列书籍从入门都进阶系列"></a>二.CSS系列书籍从入门都进阶系列</h1><h2 id="1-《HTML-amp-CSS设计与构建网站》"><a href="#1-《HTML-amp-CSS设计与构建网站》" class="headerlink" title="1.《HTML &amp; CSS设计与构建网站》"></a>1.《HTML &amp; CSS设计与构建网站》</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffa0eda7.png" alt="6.png"></p>
+<p>此书让我们知道，网页语言的书不只有呆板与枯燥，也可以赏心悦目，舒适的色彩搭配，恰到好处的图文编排！连插图都那么舒服。<br>        除了书的装订不好以外（出版社为了赚钱呀，太耐糙了销量就小了），内容牛逼！给我们查漏补缺做工具书再适合不过了，介绍了新的HTML 5和CSS 3还有网站的设计以及网站的优化，虽然不多，也涉猎到了，更新很快，要知道，互联网的发展是一日千里。<br>        如果没猜错，我估计作者是个MM，哈哈哈。</p>
+<h2 id="2-《CSS权威指南-（第3版）》"><a href="#2-《CSS权威指南-（第3版）》" class="headerlink" title="2.《CSS权威指南 （第3版）》"></a>2.《CSS权威指南 （第3版）》</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffb2aa2a.jpg" alt="7.jpg"></p>
+<p>2000年时候的书，本来以为内容会比较旧，读了才发现内容全、系统，比现在网上各种版本的css教程之类要好的多，事实上好多都是从这本书摘出来的Eric A.Meyer，牛人，书里关于css的教程语言表述很清楚，章节合理，主要讲css1及css2中的布局、定位值得看，以前想看，正好在学校的图书馆找到，看完说不定买本放着，的确不错。</p>
+<h2 id="3-《精通CSS（第2版）-高级Web标准解决方案》"><a href="#3-《精通CSS（第2版）-高级Web标准解决方案》" class="headerlink" title="3.《精通CSS（第2版）-高级Web标准解决方案》"></a>3.《精通CSS（第2版）-高级Web标准解决方案》</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffabad95.jpg" alt="8.jpg"></p>
+<p>本书汇集了最有用的CSS技术，介绍了CSS的基本概念和最佳实践，结合实例探讨了图像、链接和列表的操纵，还有表单设计、数据表格设计、纯CSS布局等核心CSS技术。</p>
+<h2 id="4-《Eric-Meyer-谈-CSS-卷2-》"><a href="#4-《Eric-Meyer-谈-CSS-卷2-》" class="headerlink" title="4.《Eric Meyer 谈 CSS(卷2)》"></a>4.《Eric Meyer 谈 CSS(卷2)》</h2><p><img src="https://i.loli.net/2018/10/27/5bd41ffb2ba0b.jpg" alt="9.jpg"></p>
+<p>这本书已一个又一个项目为基础，详细的展示了如何书写规范的样式，文章末尾已一个CSS禅意花园的项目为结尾，并告诉制作者，要做到纯粹的样式与结构相分离式不可能的。</p>
+<p>推荐页面制作者阅读者本经典之作。</p>
+<h2 id="5-《CSS禅意花园》"><a href="#5-《CSS禅意花园》" class="headerlink" title="5.《CSS禅意花园》"></a>5.《CSS禅意花园》</h2><p><img src="https://i.loli.net/2018/10/27/5bd42002e3cad.png" alt="10.png"></p>
+<p>第一次看有点糊里糊涂的，所以有些方面理解的模模糊糊。在这次看的过程中慢慢的理解了作者的一些意图，属于越看越有感觉的一本书。类似读中国古诗一样，越读越有兴趣，对自己网站页面的架构有很深的推动。</p>
+<h1 id="三-JavaScript从入门到进阶系列"><a href="#三-JavaScript从入门到进阶系列" class="headerlink" title="三.JavaScript从入门到进阶系列"></a>三.JavaScript从入门到进阶系列</h1><p>就是有一定的基础(比如最常见的HTML标签及其属性、事件、方法；最常见的CSS属性；基础的JavaScript编程能力)，能够完成一些简单的WEB前端需求。</p>
+<h2 id="1-推荐：《JavaScript-Dom编程艺术》"><a href="#1-推荐：《JavaScript-Dom编程艺术》" class="headerlink" title="1.推荐：《JavaScript Dom编程艺术》"></a>1.推荐：《JavaScript Dom编程艺术》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420043010e.jpeg" alt="11.JPEG"></p>
+<p>理由：此书绝对是入门的好书，本人也是在接触JS一段时间后才看的这本书。此书从JS的历史 – JS基础语法知识 – DOM介绍和简单的使用。现在这本书已经出了第二版，需要的朋友直接第二版就行。 评价：简洁，实用，详细，易懂，书不厚，相信很快就能看完。 算是很好的经典入门书了，贯穿一个实例，把JavaScript的优点表现的淋漓尽致，非常强大。</p>
+<h2 id="2-推荐：《JavaScript权威指南-第5版-》"><a href="#2-推荐：《JavaScript权威指南-第5版-》" class="headerlink" title="2.推荐：《JavaScript权威指南(第5版)》"></a>2.推荐：《JavaScript权威指南(第5版)》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420034a931.jpg" alt="12.jpg"></p>
+<p>理由：非常强大(这名字可不是白起)，其实说起来也惭愧，本人至今都没有买过这本书，最开始是因为 这个书实在是小贵，只好借朋友的看，不过也就看了个周末。网上关于此书的评价很多，意思大概都是说这书就是一个JS的文档手册，如果你有闲钱，并且习惯翻 书查询，那么就来一本吧。顺便提醒一句，这本书的第六版英文版已经出来了。</p>
+<p>本人以前的DEV leader兼恩师这么说过：“初级开发人员的标志就是需要在中级和高级开发的指导下完成工作”。首先不要苛责代码的对错严谨，毕竟每个程序员都有这样的一个过程，就是这个级别的特征。</p>
+<h2 id="3-推荐：《JavaScript高级程序设计》-第三版"><a href="#3-推荐：《JavaScript高级程序设计》-第三版" class="headerlink" title="3.推荐：《JavaScript高级程序设计》(第三版)"></a>3.推荐：《JavaScript高级程序设计》(第三版)</h2><p><img src="https://i.loli.net/2018/10/27/5bd42004890a0.jpeg" alt="13.JPEG"></p>
+<p>理由：这本书的作者是 Nicholas C.Zakas ,博客地址是 <a href="http://www.nczonline.net/" target="_blank" rel="noopener">http://www.nczonline.net/</a> ,大家可以去多关注，雅虎的前端工程师，是YUI的代码贡献者，可想而知这本书得含金量，他出的书都广受好评。这本书已经出了第二版，而且与第一版相比内 容更新很大，直接第二版就行。不要被书名的“高级”唬住，只要有JS基础语法知识和DOM基础知识就行，而且本书开始阶段还是介绍JS和DOM的语法知 识。有一定JavaScript的基础可以看看，不过没基础也可以看看，wrox经典书籍。</p>
+<p>评论：重点推荐一下第五章(类型),第六章(OOP),第七章(匿名),多看几遍,至少要完全看明白，能为以后进阶打好基础，个人感觉这几章是本书的 精华所在。这本书在入门的时候看节奏会快了一些，所以不建议初学者看，可是相对于我一会要介绍的书又算基础一点，所以建议先阅读完这本书，对浏览器兼容和 语法知识有一定了解之后再往下阅读。</p>
+<h2 id="4-推荐：《高性能JavaScript》《JavaScript语言精髓与编程实践》"><a href="#4-推荐：《高性能JavaScript》《JavaScript语言精髓与编程实践》" class="headerlink" title="4.推荐：《高性能JavaScript》《JavaScript语言精髓与编程实践》"></a>4.推荐：《高性能JavaScript》《JavaScript语言精髓与编程实践》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420033df0d.jpg" alt="14.jpg"></p>
+<p>理由：本人先看的是《高性能JS》，这本书还是 Nicholas C.Zakas 所著，经典之作，书中大量举例了各种不同写法的JavaScript在浏览器中的性能情况，对规范JavaScript代码和提升性能有很好的帮助，最后 提到了很多工具和性能测试的方法，都是灰常灰常有实际作用的，看得出作者很厚道(好吧,偶承认了,偶是他的粉丝)^_^,记忆最深的一句话:”如果 JavaScript 执行了几秒钟,那么很可能是你做错了什么”;《语言精髓》和《高性能》有少部分关键知识都重复提到了，可是为什么要推荐这本书，因为本书对JS语言本质的描述太棒了，这是一本介绍 JavaScript语言本质的权威书籍，从 “对象”，“函数”，“继承”，“数组”等等多个重要知识着手。我补一句话 – 本书需要反复阅读。 评论：都是好书，都很薄，而且所说的内容只要有基础都不难。相信读完之后会对JS又有新的认识，且对以后的代码规范和浏览器差异性等高级问题有了新的认识，如果读完之后会有种被灌顶的感觉，那么恭喜你，你离中级不远了。作为Orelly唯一一本我确实认可的javascript相关的书。</p>
+<p>他摒弃了Orelly系列所有我不喜欢的特点：<br>老外的聊天说教式阅读体验，样例不够丰富，排版单一，破事水等。<br>他的优点如下：</p>
+<ol>
+<li>情景丰富，基本涉及所有js性能优化的场景。还会给出不同场景的实际测试数据，真实可信。我们在阅读这些场景实例的同时也丰富了自己js的使用经验。</li>
+<li>给出了很多看似”旁门左道”的解决方案，而这些冷门的解决方案恰恰是有些人死活百度不到的真正能解决问题的最优解。</li>
+<li>在说问题的同时说原理，深入浅出，游刃有余。所以这本书不仅仅是一本介绍js性能相关的书，而是一本涉及浏览器原理，js解析原理，用户体验等知识的javascript最佳注解。<br>阅读建议：<br>建议和高程三一起看，可以算是高程三阅读的最佳伴侣。<br>高程三告诉你“他叫什么，他什么样”，<br>这本书就告诉你“他为什么”，“他该怎样”。<br>所以，当别人还在为某些问题绞尽脑汁的时候，你已经从起点上干翻他们了。</li>
+</ol>
+<h2 id="5-推荐：《深入浅出JavaScript》"><a href="#5-推荐：《深入浅出JavaScript》" class="headerlink" title="5.推荐：《深入浅出JavaScript》"></a>5.推荐：《深入浅出JavaScript》</h2><p><img src="https://i.loli.net/2018/10/27/5bd42003379bb.jpg" alt="15.jpg"></p>
+<p>理由：Ajax程序员必备 里面讲自己开发的一个JavaScript框架。</p>
+<h2 id="6-推荐《学习Javascript数据结构与算法》"><a href="#6-推荐《学习Javascript数据结构与算法》" class="headerlink" title="6. 推荐《学习Javascript数据结构与算法》"></a>6. 推荐《学习Javascript数据结构与算法》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420047e75e.jpeg" alt="16.JPEG"></p>
+<p>理由：这本书相对是一本冷门书。为什么我会推荐他，是因为他能解决每个半路出家的js程序员都曾思考过的一些问题：</p>
+<ol>
+<li>我们的数组Array这么强大，要栈Stack，队列Queue这些功能少，半半拉拉的东西干什么呢？</li>
+<li>我们学的数据结构搞来搞去好像也就那些玩意，为什么被大家这么推崇，还要分门别类讨论呢？<br>所以这本书只是为何告诉你上面这些问题的答案：</li>
+<li>栈和队列本来就没有Array功能强。没有Stack和Queue类只是因为ES5不去实现它而已。作为一种相互之间存在一种或多种特定关系的数据集合，其存在意义是不应该被其功能强大与否来决定的。</li>
+<li>数据结构和编程语言无关。语言死了，他们会在下一门语言里重生。哪怕计算机死了，他们都会在下一个概念体里重生。<br>阅读建议：跟着书本把这里面的结构全部敲一遍，快的话一天就能搞定。从此你便再不怕惧怕js相关的简单数据结构问题。<br>但是，遇上高级的树，图等问题该跪还是要跪。因为这本书虎头蛇尾，后面的高级点的数据结构介绍的不够深。<br>适合经常反思“它从哪里来，要到哪里去？”的js程序员，或后悔以前数据结构没好好学的前端同学。<br>还是本人以前的DEV leader兼恩师这么说过：“中级开发人员的标志就是在高级开发或架构师较少的指导下高质量的完成工作，并对产品或项目有自己的想法与理解”。</li>
+</ol>
+<h2 id="7-强烈推荐：《JavaScript-DOM高级程序设计》"><a href="#7-强烈推荐：《JavaScript-DOM高级程序设计》" class="headerlink" title="7.强烈推荐：《JavaScript DOM高级程序设计》"></a>7.强烈推荐：《JavaScript DOM高级程序设计》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420033ce44.jpeg" alt="17.JPEG"></p>
+<p>理由：此书灰常犀利，本人一共看了近半年的时间，已反复阅读多次。说实话，这本书的翻译一般，代码也有少许错误，可是这不影响这本书的强大，通过学习 本书，可以理解一个JS的库如何产生，自己动手写一个简单的自己的JS库，如果你打算研究其他的JS库或者正在研究其他的JS库，那么这本书会使你的理解 达到新的高度，进阶高级必读，写库必读。 评论：异常强大的一本JS巨作，此书不薄，强烈推荐。</p>
+<h2 id="8-强烈推荐：《JavaScript设计模式与开发实践》"><a href="#8-强烈推荐：《JavaScript设计模式与开发实践》" class="headerlink" title="8.强烈推荐：《JavaScript设计模式与开发实践》"></a>8.强烈推荐：《JavaScript设计模式与开发实践》</h2><p><img src="https://i.loli.net/2018/10/27/5bd42006ed6ef.png" alt="18.png"></p>
+<p>理由：我认为腾讯AlloyTeam的这本书对我帮助媲美高程三。那时候我恰好换公司，从原来的开发方式切换成另一种完全不同的开发方式，让我很不适应。这本书及时的蹦出来，他拿实际的应用场景举例，告诉你不同js项目里如何共通设计模式，还极其详细的介绍了函数的高级用法，能让你对js高阶函数的认知上升一个台阶。难能可贵的是他还拿java作为静态语言的类比。从语言统一高度来给你分析这些问题。和上本介绍数据结构的书一样，这本书有的放矢，能完美的解决对js设计模式有疑问的同学的实际问题。他比上本书更深刻，更易读，也更贴近实践。评论：书不厚，可真的是内容丰富且高深，强烈建议购买。</p>
+<p>阅读建议：</p>
+<p>这是本适合反复阅读的书籍。</p>
+<p>如果你的思路能根据应用场景自动切换到最适合的设计模式，说明你已吃透这本书了。</p>
+<h2 id="9-推荐：《高性能网站建设指南》《高性能网站建设进阶指南》"><a href="#9-推荐：《高性能网站建设指南》《高性能网站建设进阶指南》" class="headerlink" title="9.推荐：《高性能网站建设指南》《高性能网站建设进阶指南》"></a>9.推荐：《高性能网站建设指南》《高性能网站建设进阶指南》</h2><p> <img src="https://i.loli.net/2018/10/27/5bd4201235efd.jpeg" alt="19.JPEG"></p>
+<p>理由：在读完前几本书之后我们对前端的性能和自己的代码的效率已经达到相当的高度了，然后我们在接触一些前端工程师的一些精髓。本书对HTTP请求，CDN，内容缓存和一些web开发中常见问题进行讲解。 评论：书都不厚，可是说的都是比较实用的东西，可是用不用的上还得看个人和项目需要了。</p>
+<h2 id="10-推荐：《精通JavaScript》"><a href="#10-推荐：《精通JavaScript》" class="headerlink" title="10.推荐：《精通JavaScript》"></a>10.推荐：《精通JavaScript》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420121b63e.jpg" alt="20.jpg"></p>
+<p>理由：把JavaScript讲得很面向对象。很现代！ 图灵教育的出版引进书籍有很多都是经典书籍，非常好。 </p>
+<h2 id="11-推荐：《你不知道的JavaScript》"><a href="#11-推荐：《你不知道的JavaScript》" class="headerlink" title="11. 推荐：《你不知道的JavaScript》"></a>11. 推荐：《你不知道的JavaScript》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420121a4e8.jpg" alt="21.jpg"></p>
+<p>大名鼎鼎的Github开源的书籍。为了他的名气我也得买一本实体书来拜读下。这本是上卷，只涉及作用域和闭包，this和对象原型两部分。不过其深入程度是其他js书籍难以企及的。可以说，这已经是大部分前端程序员对js语法可以深入了解的最底层了，再往下就直面编译原理了。</p>
+<p>阅读建议：</p>
+<p>用于提升自己的js语法的理解等级。</p>
+<p>对于进入工作第二年的想深入理解js语法的同学来说特别有效。</p>
+<h1 id="四-HTTP网络系列从入门到进阶系列"><a href="#四-HTTP网络系列从入门到进阶系列" class="headerlink" title="四.HTTP网络系列从入门到进阶系列"></a>四.HTTP网络系列从入门到进阶系列</h1><h2 id="1-《图解HTTP和图解TCP-IP》"><a href="#1-《图解HTTP和图解TCP-IP》" class="headerlink" title="1.《图解HTTP和图解TCP/IP》"></a>1.《图解HTTP和图解TCP/IP》</h2><p><img src="https://i.loli.net/2018/10/27/5bd4201239ba9.jpg" alt="22.jpg"></p>
+<p>相较于前两本大厚书，这两本书更加亲民，小白可以买来看看，还是很适合入门的。</p>
+<h2 id="2-《计算机网络：自顶向下》"><a href="#2-《计算机网络：自顶向下》" class="headerlink" title="2.《计算机网络：自顶向下》"></a>2.《计算机网络：自顶向下》</h2><p><img src="https://i.loli.net/2018/10/27/5bd420130bfee.jpg" alt="23.jpg"></p>
+<p>这本从应用层讲到物理层，感觉这种方式学起来更轻松，我比较推荐小白看这本。</p>
+<h2 id="3-《HTTP权威指南》"><a href="#3-《HTTP权威指南》" class="headerlink" title="3.《HTTP权威指南》"></a>3.《HTTP权威指南》</h2><p><img src="https://i.loli.net/2018/10/27/5bd42012ed9a5.jpg" alt="24.jpg"></p>
+<p>内容全面，涉及http及其周边方方面面，http前世今生，http响应机制，http连接过程，http安全认证，http编码，http页面上传等等。读完对http有一个全面的认识，尤其是最近回头重读了安全部分内容，感觉收获不小：<br>cookie有两个版本，由服务器set，在客户端每次请求时附加，作为认证/追踪凭证，cookie可配置限期和作用域；<br>帐号认证有base64方式和hash方式，都存在安全隐患；<br>https是王道，https = ssl + http。</p>
+<h1 id="五-AJAX系列从入门到进阶推荐"><a href="#五-AJAX系列从入门到进阶推荐" class="headerlink" title="五.AJAX系列从入门到进阶推荐"></a>五.AJAX系列从入门到进阶推荐</h1><h2 id="1-《Ajax基础教程》（亚马逊计算机榜首图书，国内第1本Ajax图书）-（美）阿斯利森，（美）舒塔-著，金灵"><a href="#1-《Ajax基础教程》（亚马逊计算机榜首图书，国内第1本Ajax图书）-（美）阿斯利森，（美）舒塔-著，金灵" class="headerlink" title="1.《Ajax基础教程》（亚马逊计算机榜首图书，国内第1本Ajax图书） （美）阿斯利森，（美）舒塔 著，金灵"></a>1.《Ajax基础教程》（亚马逊计算机榜首图书，国内第1本Ajax图书） （美）阿斯利森，（美）舒塔 著，金灵</h2><p><img src="https://i.loli.net/2018/10/27/5bd420140823e.png" alt="25.png"></p>
+<p>AJAX必备图书之一、国内发行的第一本AJAX图书，也是目前最好的AJAX入门书，如果是AJAX新手，此书是最好的入门图书。本书基本包括了实现Ajax需要了解的大部分技术与工具，让您在一开始就对AJAX就有一个整体把握与全局观念。</p>
+<h2 id="2-《Ajax实战》（Ajax-in-action中文版）"><a href="#2-《Ajax实战》（Ajax-in-action中文版）" class="headerlink" title="2.《Ajax实战》（Ajax in action中文版）"></a>2.《Ajax实战》（Ajax in action中文版）</h2><p> <img src="https://i.loli.net/2018/10/27/5bd42012e6074.jpg" alt="26.jpg"></p>
+<p>AJAX必备的图书之二：人称“AJAX圣经”，AJAX的进阶最佳。特点就是足够深入，仅此一点，已经足够。</p>
+<p>进阶看着一本能看懂就相当不错了。</p>
+<h1 id="六-vue-js从入门到进阶系列"><a href="#六-vue-js从入门到进阶系列" class="headerlink" title="六.vue.js从入门到进阶系列"></a>六.vue.js从入门到进阶系列</h1><h2 id="1-《vue-js权威指南》"><a href="#1-《vue-js权威指南》" class="headerlink" title="1.《vue.js权威指南》"></a>1.《vue.js权威指南》</h2><p><img src="https://i.loli.net/2018/10/27/5bd42012eb9b7.jpg" alt="27.jpg"></p>
+<p>一般，入门看看就好。其中有部分是引用网上的，有点坑，看看电子版，对vue.js提升还是有点帮助的。大佬就不推荐了。</p>
+<h2 id="2-《vue-js实战》"><a href="#2-《vue-js实战》" class="headerlink" title="2.《vue.js实战》"></a>2.《vue.js实战》</h2><p><img src="https://i.loli.net/2018/10/27/5bd42012e3ee9.jpg" alt="28.jpg"></p>
+<p>由雨溪大佬的书，前端人不看会后悔的，特别是Vue.js这系列。</p>
+<h1 id="七-正则表达式系列"><a href="#七-正则表达式系列" class="headerlink" title="七.正则表达式系列"></a>七.正则表达式系列</h1><h2 id="1-《正则表达式必知必会》"><a href="#1-《正则表达式必知必会》" class="headerlink" title="1.《正则表达式必知必会》"></a>1.《正则表达式必知必会》</h2><p><img src="https://i.loli.net/2018/10/27/5bd4202937cb3.jpg" alt="29.jpg"></p>
+<p>在该书的序言中作者已经提到过一些 大部头的正则表达式的书，而且作者也声明了：该书比较适合那些不太了解正则表达式而又想尽快入门能够解决一些实践中遇到的小问题的朋友们。我最近在看这本书，因为以前有一点半点的学习过正则表达式，感觉正则表达式语法虽然不算难，但是要真正用好还是有点难度的。需要大量的实践经验。这本书的正文内容大概十章左右，前五章都算一些基础知识，也是我以前就知道的，后面的几章也许你也知道，但是个人认为算是一些稍微高级点的内容。所以我想，如果你还不怎么精通正则表达式，在工作中使用起来比较费力的话，这本书倒也挺适合的。查漏补缺吧。学前端都适合看看。</p>
+<h2 id="2-《精通正则表达式》"><a href="#2-《精通正则表达式》" class="headerlink" title="2.《精通正则表达式》"></a>2.《精通正则表达式》</h2><p><img src="https://i.loli.net/2018/10/27/5bd4202934a22.jpg" alt="30.jpg"></p>
+<p>我强烈推荐这本书，我看了之后对其的运行过程有了深入地了解，现在对一般的问题，运行的效率都有一定的提高。这个本买来很长时间了 感觉太厚 就一直没有看，这点时间突然对正则表达式感兴趣了 就看了 前几张的内容很值得看 尤其是中间几章，我是彻底了解了正则的工作原理 以前工作中出现的一些情况原来想不明白，现在也就觉得应该是这样子了 建议大家静下心来看这本书。</p>
+<p><br></p>
+<h1 id="总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。"><a href="#总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。" class="headerlink" title="总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。"></a>总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。</h1><blockquote>
+<p>一.HTML系列书籍从入门到进阶系列<br>1.《HTML5 揭秘》<br>2.《响应式Web设计:HTML5和CSS3实战》<br>3.《疯狂HTML 5/CSS3/JavaScript讲义》　　　<br>4.《HTML5触摸界面设计与开发》　<br>5.《HTML5高级程序设计》<br>二.CSS系列书籍从入门都进阶系列<br>1.《HTML &amp; CSS设计与构建网站》<br>2.《CSS权威指南 （第3版）》<br>3.《精通CSS（第2版）-高级Web标准解决方案》<br>4.《Eric Meyer 谈 CSS(卷2)》<br>5.《CSS禅意花园》<br>三.JavaScript从入门到进阶系列<br>1.《JavaScript Dom编程艺术》<br>2.《JavaScript权威指南(第5版)》<br>3.《JavaScript高级程序设计》(第三版)<br>4.《高性能JavaScript》《JavaScript语言精髓与编程实践》<br>5.《深入浅出JavaScript》<br>6.《学习Javascript数据结构与算法》<br>7.《JavaScript DOM高级程序设计》<br>8.《JavaScript设计模式与开发实践》<br>9.《高性能网站建设指南》《高性能网站建设进阶指南》<br>10.《精通JavaScript》<br>11.《你不知道的JavaScript》<br>四.HTTP网络系列从入门到进阶系列<br>1.《图解HTTP和图解TCP/IP》<br>2.《计算机网络：自顶向下》<br>3.《HTTP权威指南》<br>五.AJAX系列从入门到进阶推荐<br>1.《Ajax基础教程》（亚马逊计算机榜首图书，国内第1本Ajax图书）<br>2.《Ajax实战》（Ajax in action中文版）<br>六.vue.js从入门到进阶系列<br>1.《vue.js权威指南》<br>2.《vue.js实战》<br>七.正则表达式系列<br>1.《正则表达式必知必会》<br>2.《精通正则表达式》</p>
+</blockquote>
+<blockquote>
+<p><strong>40+本pdf书网盘链接：<br>链接：<a href="https://pan.baidu.com/s/1PEwnn58LZ1zfelEP14aeHw" target="_blank" rel="noopener">https://pan.baidu.com/s/1PEwnn58LZ1zfelEP14aeHw</a> 密码：y39z<br>备注：里面已经顺便整理压缩好，需要下载后才可以打开，网盘直接打开会显示损坏。</strong><br><br></p>
+</blockquote>
+<blockquote>
+<p>附java从入门SE到进阶EE推荐书籍50+本：<br><a href="https://pymlovelyq.github.io/2018/10/06/java/" target="_blank" rel="noopener">https://pymlovelyq.github.io/2018/10/06/java/</a><br></p>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>随心而赏，重在分享。♥(ˆ◡ˆԅ)</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="极客侠栈 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="极客侠栈 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># </i>算法</a>
+          
+            <a href="/tags/前端/" rel="tag"># </i>前端</a>
+          
+            <a href="/tags/HTML/" rel="tag"># </i>HTML</a>
+          
+            <a href="/tags/CSS/" rel="tag"># </i>CSS</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># </i>JavaScript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/24/CC/" rel="next" title="C语言推荐书籍从入门到进阶带你走上大牛之路（珍藏版）">
+                <i class="fa fa-chevron-left"></i> C语言推荐书籍从入门到进阶带你走上大牛之路（珍藏版）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="极客侠栈" />
+            
+              <p class="site-author-name" itemprop="name">极客侠栈</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com/nav.html" title="馨客栈" target="_blank">馨客栈</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com" title="MackXin" target="_blank">MackXin</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言：技术书阅读方法论"><span class="nav-number">1.</span> <span class="nav-text">前言：技术书阅读方法论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-速读一遍（最好在1-2天内完成）"><span class="nav-number">1.1.</span> <span class="nav-text">一.速读一遍（最好在1~2天内完成）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-精读一遍（在2周内看完）"><span class="nav-number">1.2.</span> <span class="nav-text">二.精读一遍（在2周内看完）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-实践（在整个过程中都要）"><span class="nav-number">1.3.</span> <span class="nav-text">三.实践（在整个过程中都要）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一-HTML系列书籍从入门到进阶系列"><span class="nav-number">2.</span> <span class="nav-text">一.HTML系列书籍从入门到进阶系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-《HTML5-揭秘》"><span class="nav-number">2.1.</span> <span class="nav-text">1.《HTML5 揭秘》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-《响应式Web设计-HTML5和CSS3实战》BenFrain-作者-王永强-译者"><span class="nav-number">2.2.</span> <span class="nav-text">2.《响应式Web设计:HTML5和CSS3实战》BenFrain (作者), 王永强 (译者)　</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-《疯狂HTML-5-CSS3-JavaScript讲义》-李刚-作者"><span class="nav-number">2.3.</span> <span class="nav-text">3.《疯狂HTML 5/CSS3/JavaScript讲义》　　李刚 (作者)　　</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-《HTML5触摸界面设计与开发》-伍兹-StephenWoods-作者-覃介右-谷岳-译者）"><span class="nav-number">2.4.</span> <span class="nav-text">4.《HTML5触摸界面设计与开发》　伍兹 (StephenWoods) (作者), 覃介右 谷岳 (译者）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-《HTML5高级程序设计》"><span class="nav-number">2.5.</span> <span class="nav-text">5.《HTML5高级程序设计》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-CSS系列书籍从入门都进阶系列"><span class="nav-number">3.</span> <span class="nav-text">二.CSS系列书籍从入门都进阶系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-《HTML-amp-CSS设计与构建网站》"><span class="nav-number">3.1.</span> <span class="nav-text">1.《HTML &amp; CSS设计与构建网站》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-《CSS权威指南-（第3版）》"><span class="nav-number">3.2.</span> <span class="nav-text">2.《CSS权威指南 （第3版）》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-《精通CSS（第2版）-高级Web标准解决方案》"><span class="nav-number">3.3.</span> <span class="nav-text">3.《精通CSS（第2版）-高级Web标准解决方案》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-《Eric-Meyer-谈-CSS-卷2-》"><span class="nav-number">3.4.</span> <span class="nav-text">4.《Eric Meyer 谈 CSS(卷2)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-《CSS禅意花园》"><span class="nav-number">3.5.</span> <span class="nav-text">5.《CSS禅意花园》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-JavaScript从入门到进阶系列"><span class="nav-number">4.</span> <span class="nav-text">三.JavaScript从入门到进阶系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-推荐：《JavaScript-Dom编程艺术》"><span class="nav-number">4.1.</span> <span class="nav-text">1.推荐：《JavaScript Dom编程艺术》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-推荐：《JavaScript权威指南-第5版-》"><span class="nav-number">4.2.</span> <span class="nav-text">2.推荐：《JavaScript权威指南(第5版)》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-推荐：《JavaScript高级程序设计》-第三版"><span class="nav-number">4.3.</span> <span class="nav-text">3.推荐：《JavaScript高级程序设计》(第三版)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-推荐：《高性能JavaScript》《JavaScript语言精髓与编程实践》"><span class="nav-number">4.4.</span> <span class="nav-text">4.推荐：《高性能JavaScript》《JavaScript语言精髓与编程实践》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-推荐：《深入浅出JavaScript》"><span class="nav-number">4.5.</span> <span class="nav-text">5.推荐：《深入浅出JavaScript》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-推荐《学习Javascript数据结构与算法》"><span class="nav-number">4.6.</span> <span class="nav-text">6. 推荐《学习Javascript数据结构与算法》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-强烈推荐：《JavaScript-DOM高级程序设计》"><span class="nav-number">4.7.</span> <span class="nav-text">7.强烈推荐：《JavaScript DOM高级程序设计》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-强烈推荐：《JavaScript设计模式与开发实践》"><span class="nav-number">4.8.</span> <span class="nav-text">8.强烈推荐：《JavaScript设计模式与开发实践》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-推荐：《高性能网站建设指南》《高性能网站建设进阶指南》"><span class="nav-number">4.9.</span> <span class="nav-text">9.推荐：《高性能网站建设指南》《高性能网站建设进阶指南》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-推荐：《精通JavaScript》"><span class="nav-number">4.10.</span> <span class="nav-text">10.推荐：《精通JavaScript》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-推荐：《你不知道的JavaScript》"><span class="nav-number">4.11.</span> <span class="nav-text">11. 推荐：《你不知道的JavaScript》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-HTTP网络系列从入门到进阶系列"><span class="nav-number">5.</span> <span class="nav-text">四.HTTP网络系列从入门到进阶系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-《图解HTTP和图解TCP-IP》"><span class="nav-number">5.1.</span> <span class="nav-text">1.《图解HTTP和图解TCP/IP》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-《计算机网络：自顶向下》"><span class="nav-number">5.2.</span> <span class="nav-text">2.《计算机网络：自顶向下》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-《HTTP权威指南》"><span class="nav-number">5.3.</span> <span class="nav-text">3.《HTTP权威指南》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五-AJAX系列从入门到进阶推荐"><span class="nav-number">6.</span> <span class="nav-text">五.AJAX系列从入门到进阶推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-《Ajax基础教程》（亚马逊计算机榜首图书，国内第1本Ajax图书）-（美）阿斯利森，（美）舒塔-著，金灵"><span class="nav-number">6.1.</span> <span class="nav-text">1.《Ajax基础教程》（亚马逊计算机榜首图书，国内第1本Ajax图书） （美）阿斯利森，（美）舒塔 著，金灵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-《Ajax实战》（Ajax-in-action中文版）"><span class="nav-number">6.2.</span> <span class="nav-text">2.《Ajax实战》（Ajax in action中文版）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六-vue-js从入门到进阶系列"><span class="nav-number">7.</span> <span class="nav-text">六.vue.js从入门到进阶系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-《vue-js权威指南》"><span class="nav-number">7.1.</span> <span class="nav-text">1.《vue.js权威指南》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-《vue-js实战》"><span class="nav-number">7.2.</span> <span class="nav-text">2.《vue.js实战》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七-正则表达式系列"><span class="nav-number">8.</span> <span class="nav-text">七.正则表达式系列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-《正则表达式必知必会》"><span class="nav-number">8.1.</span> <span class="nav-text">1.《正则表达式必知必会》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-《精通正则表达式》"><span class="nav-number">8.2.</span> <span class="nav-text">2.《精通正则表达式》</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。"><span class="nav-number">9.</span> <span class="nav-text">总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+         <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">极客侠栈</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
+<!-- ҳ����С���� -->
+<script type="text/javascript" src="/js/src/love.js"></script>
