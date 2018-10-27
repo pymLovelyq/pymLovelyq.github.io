@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*��������ɫ*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*��Ӱ��ɫ*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*�ϱ߿���ɫ*/
+        border-left-color: #1E92FB;    /*��߿���ɫ*/
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+
+
+  <meta name="description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta name="keywords" content="算法,面试,数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习数据库从入门到进阶书籍pdf版吐血整理推荐（珍藏版）">
+<meta property="og:url" content="http://yoursite.com/2018/10/06/database/index.html">
+<meta property="og:site_name" content="极客侠栈">
+<meta property="og:description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc414d5.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc538ea.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc550f2.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc626f5.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc57ce6.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc53616.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc5ed4c.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc5813a.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc7ff44.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3eecc7f1e9.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3ef990a245.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3ef98ef95d.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/10/27/5bd3ef993284a.jpg">
+<meta property="og:updated_time" content="2018-10-27T05:29:17.959Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习数据库从入门到进阶书籍pdf版吐血整理推荐（珍藏版）">
+<meta name="twitter:description" content="前言：技术书阅读方法论一.速读一遍（最好在1~2天内完成）人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。 二.精读一遍（在2周内看完）">
+<meta name="twitter:image" content="https://i.loli.net/2018/10/27/5bd3eecc414d5.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/06/database/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>学习数据库从入门到进阶书籍pdf版吐血整理推荐（珍藏版） | 极客侠栈</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">极客侠栈</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/06/database/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="极客侠栈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="极客侠栈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">学习数据库从入门到进阶书籍pdf版吐血整理推荐（珍藏版）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-06 10:36:31" itemprop="dateCreated datePublished" datetime="2018-10-06T10:36:31+08:00">2018-10-06</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-27 13:29:17" itemprop="dateModified" datetime="2018-10-27T13:29:17+08:00">2018-10-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<h1 id="前言：技术书阅读方法论"><a href="#前言：技术书阅读方法论" class="headerlink" title="前言：技术书阅读方法论"></a>前言：技术书阅读方法论</h1><h2 id="一-速读一遍（最好在1-2天内完成）"><a href="#一-速读一遍（最好在1-2天内完成）" class="headerlink" title="一.速读一遍（最好在1~2天内完成）"></a>一.速读一遍（最好在1~2天内完成）</h2><p>人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。<br> 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。</p>
+<h2 id="二-精读一遍（在2周内看完）"><a href="#二-精读一遍（在2周内看完）" class="headerlink" title="二.精读一遍（在2周内看完）"></a>二.精读一遍（在2周内看完）</h2><p>有了前面速读的感觉，第二次看会有慢慢深刻了思想和意识的作用，具体为什么不要问我，去问30年后的神经大脑专家，现在人类可能还没有总结出为什么大脑对记忆的完全方法论，但是，就像我们专业程序员，打代码都是先实践，然后就渐渐懂了过程，慢慢懂了原理，所以第二遍读的时候稍微慢下来，2周内搞定。记住一句话：没看完一个章节后，总结一下这个章节讲了啥。很关键。</p>
+<h2 id="三-实践（在整个过程中都要）"><a href="#三-实践（在整个过程中都要）" class="headerlink" title="三.实践（在整个过程中都要）"></a>三.实践（在整个过程中都要）</h2><p>实践的时候，要注意不用都去实践，最好看着书，敲下代码，把重点的内容敲一遍有个肌肉记忆就很不错了。<br> 以及到自己做过的项目中去把每个有涉及的原理的代码，研究一遍，就可以了</p>
+</blockquote>
+<blockquote>
+<p><strong>数据库必读18本技术书籍网盘链接：       <a href="https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg" target="_blank" rel="noopener">https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg</a><br>提取码：9nbs<br>备注：文件比较大，网盘直接打开会显示损坏，里面已经整理并且压缩好，需要下载后才可以打。</strong></p>
+</blockquote>
+<blockquote>
+<p>软件开发者编写代码，最终都是要处理数据，因此数据库是必备技能。<br>  实际上，学习数据库并不需要这么从懵圈到放弃。最近，美团•大众点评内部成立了数据库俱乐部，多位一线工程师经过一番讨论，总结出影响过自己成长的9本数据库图书，由浅入深，希望能对同学们有所帮助。</p>
+</blockquote>
+<blockquote>
+<p>数据库必读书籍总结：<br>一.入门：<br>1.《MySQL必知必会》<br>2.《SQL学习指南（第2版 修订版） 》<br>3.《SQL必知必会》<br>4.《数据库系统概念》<br>二.进 阶<br>5.《MySQL技术内幕——InnoDB存储引擎》<br>6.《Redis设计与实现》<br>7.《SQL语言艺术》<br>8.《SQL反模式》<br>9.《ZooKeeper：分布式过程协同技术详解》<br>三.强 化<br>10.《高可用MySQL（第2版）》<br>11.《高性能MySQL（第3版）》<br>12.《Oracle高效设计》<br>13.《Oracle编程艺术：深入理解数据库体系结构（第3版）》<br><br> </p>
+</blockquote>
+<h1 id="从入门到进阶数据库书籍推荐理由："><a href="#从入门到进阶数据库书籍推荐理由：" class="headerlink" title="从入门到进阶数据库书籍推荐理由："></a>从入门到进阶数据库书籍推荐理由：</h1><h2 id="一-入门系列："><a href="#一-入门系列：" class="headerlink" title="一.入门系列： "></a>一.入门系列： <br></h2><h3 id="1-《MySQL必知必会》"><a href="#1-《MySQL必知必会》" class="headerlink" title="1.《MySQL必知必会》 "></a>1.《MySQL必知必会》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc414d5.jpg" alt="2.jpg"></p>
+<p>这本书英文原版名是很标题党的《Teach Yourself SQL in 10 Minutes》，却是最好的数据库入门书，在Amazon上长期排在数据库销售榜首，建议想快速了解数据库原理和MySQL的新手阅读。快餐性质，简洁明快，小开本，而且很薄，比较好读。有前端工程师表示自己数据库方面只读了这本书，就足以应付大部分开发任务了。</p>
+<h3 id="2-《SQL学习指南（第2版-修订版）》"><a href="#2-《SQL学习指南（第2版-修订版）》" class="headerlink" title="2. 《SQL学习指南（第2版 修订版）》 "></a>2. 《SQL学习指南（第2版 修订版）》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc538ea.jpg" alt="1.jpg"></p>
+<p>如果你只想学怎么写SQL，那可以读这本书。O’Reilly动物书系列，品质还是很有保证的。</p>
+<h3 id="3-《SQL必知必会》"><a href="#3-《SQL必知必会》" class="headerlink" title="3.《SQL必知必会》 "></a>3.《SQL必知必会》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc550f2.jpg" alt="3.jpg"></p>
+<p>SQL 是目前使用最为广泛的数据库语言之一。本书没有涉及理论，而是从实践出发，由浅入深地讲解了广大读者所必需的SQL 知识，适用于各种主流数据库。实例丰富，便于查阅。<br>本书涉及不同平台上数据的排序、过滤和分组，以及表、视图、联结、子查询、游标、存储过程和触发器等内容，通过本书读者可以系统地学习到SQL 的知识和方法。 </p>
+<h3 id="4-《数据库系统概念》"><a href="#4-《数据库系统概念》" class="headerlink" title="4.《数据库系统概念》 "></a>4.《数据库系统概念》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc626f5.jpg" alt="4.jpg"></p>
+<p>本书是数据库系统方面的经典教材之一，其内容由浅入深，既包含数据库系统基本概念，又反映数据库技术新进展。它被国际上许多著名大学所采用，包括斯坦福大学、耶鲁大学、得克萨斯大学、康奈尔大学、伊利诺伊大学等。</p>
+<p><br></p>
+<h2 id="二-进-阶系列"><a href="#二-进-阶系列" class="headerlink" title="二.进 阶系列"></a>二.进 阶系列</h2><h3 id="5-《MySQL技术内幕——InnoDB存储引擎》"><a href="#5-《MySQL技术内幕——InnoDB存储引擎》" class="headerlink" title="5.《MySQL技术内幕——InnoDB存储引擎》 "></a>5.《MySQL技术内幕——InnoDB存储引擎》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc57ce6.jpg" alt="5.jpg"></p>
+<p>怎么说，每个行业都有几本被翻来翻去的“街书”，而本书就是MySQL的“街书”，该书目前已经有了三版。从源代码的角度深度解析了InnoDB的体系结构、实现原理、工作机制，并给出了大量最佳实践，能帮助你系统而深入地掌握InnoDB。注重实战，全书辅有大量的案例，可操作性极强。</p>
+<h3 id="6-《Redis设计与实现》"><a href="#6-《Redis设计与实现》" class="headerlink" title="6. 《Redis设计与实现》 "></a>6. 《Redis设计与实现》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc53616.jpg" alt="6.jpg"></p>
+<p>Redis是目前应用最广泛的NoSQL数据库。本书系统而全面地描述了Redis内部运行机制，图示丰富，描述清晰，并给出大量参考信息，是NoSQL数据库开发人员案头必备。</p>
+<h3 id="7-《SQL语言艺术》"><a href="#7-《SQL语言艺术》" class="headerlink" title="7.《SQL语言艺术》 "></a>7.《SQL语言艺术》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc5ed4c.jpg" alt="7.jpg"></p>
+<p>本书分为12章，每一章包含许多原则或准则，并通过举例的方式对原则进行解释说明。这些例子大多来自于实际案例，对九种SQL经典查询场景以及其性能影响讨论，非常便于实践，为你的实际工作提出了具体建议。本书适合SQL数据库开发者、软件架构师，也适合DBA，尤其是数据库应用维护人员阅读。</p>
+<h3 id="8-《SQL反模式》"><a href="#8-《SQL反模式》" class="headerlink" title="8.《SQL反模式》 "></a>8.《SQL反模式》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc5813a.jpg" alt="8.jpg"></p>
+<p>它介绍了如何避免在SQL的使用和开发中陷入一些常见却经常被忽略的误区。它通过讲述各种具体的案例，以及开发人员和使用人员在面对这些案例时经常采用的错误解决方案，来介绍如何识别、利用这些陷阱，以及面对问题时正确的解决手段。另外，《SQL反模式》还涉及了SQL的各级范式和针对它们的正确理解。 </p>
+<h3 id="9-《ZooKeeper：分布式过程协同技术详解》"><a href="#9-《ZooKeeper：分布式过程协同技术详解》" class="headerlink" title="9.  《ZooKeeper：分布式过程协同技术详解》"></a>9.  《ZooKeeper：分布式过程协同技术详解》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc7ff44.jpg" alt="9.jpg"></p>
+<p>ZooKeeper是Google的Chubby项目的开源实现，它曾经作为Hadoop的子项目，在大数据领域得到广泛应用。ZooKeeper以Fast Paxos算法为基础，同时为了解决活锁问题，对Fast Paxos算法进行了优化，因此也可以广泛用于大数据之外的其他分布式系统，为大型分布式系统提供可靠的协作处理功能。这本书是实际开发和维护中的一本最佳参考书籍。</p>
+<h2 id="三-强-化系列"><a href="#三-强-化系列" class="headerlink" title="三.强 化系列"></a>三.强 化系列</h2><h3 id="10-《高可用MySQL（第2版）》"><a href="#10-《高可用MySQL（第2版）》" class="headerlink" title="10.《高可用MySQL（第2版）》"></a>10.《高可用MySQL（第2版）》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc7f1e9.jpg" alt="10.jpg"></p>
+<p>主要讲解真实环境下如何使用MySQL的复制、集群和监控特性，揭示MySQL可靠性和高可用性的方方面面。此书定位于解决MySQL数据库的常见应用瓶颈，在保持MySQL持续可用性的前提下，挖潜各种提高性能的解决方案。</p>
+<h3 id="11-《高性能MySQL（第3版）》"><a href="#11-《高性能MySQL（第3版）》" class="headerlink" title="11.《高性能MySQL（第3版）》"></a>11.《高性能MySQL（第3版）》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3ef990a245.jpg" alt="11.jpg"></p>
+<p>作者推荐的工具、实战案例及经验过的诊断技术，可大大提高性能急救技能，以及加深对MySQL本质的理解。而且本书将数据库结构的客观方面纳入思考，此外还增补了MySQL高可用性及云特性。</p>
+<h3 id="12-《Oracle高效设计》"><a href="#12-《Oracle高效设计》" class="headerlink" title="12. 《Oracle高效设计》"></a>12. 《Oracle高效设计》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3ef98ef95d.jpg" alt="12.jpg"></p>
+<p>这是一本程序员普遍反映收益比较大的一本书，作者Thomas Kyte，Oracle专业领域世界上最权威的专家之一，他是Oracle核心技术小组副主席，兼《Oracle Magazine》及其在线论坛“Ask Tom”专栏作家。<br>本书对Oracle及数据库的知识进行了全面深入的讲解，是一本关于Oracle的高级手册。本书内容翔实，实例丰富，语言流畅且浅显易懂，适合作为从事Oracle开发人员的参考手册。</p>
+<h3 id="13-《Oracle编程艺术：深入理解数据库体系结构（第3版）》"><a href="#13-《Oracle编程艺术：深入理解数据库体系结构（第3版）》" class="headerlink" title="13. 《Oracle编程艺术：深入理解数据库体系结构（第3版）》"></a>13. 《Oracle编程艺术：深入理解数据库体系结构（第3版）》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3ef993284a.jpg" alt="13.jpg"></p>
+<p>对于想学习SQL、PL/SQL的书，这是一本必读之物，除此之外，该书从开发的角度详细解读了整个Oracle体系结构，深入浅出，绝对佳作。</p>
+<h1 id="数据库必读书籍总结："><a href="#数据库必读书籍总结：" class="headerlink" title="数据库必读书籍总结："></a>数据库必读书籍总结：</h1><blockquote>
+<p>一.入门系列：<br>1.《MySQL必知必会》<br>2.《SQL学习指南（第2版 修订版） 》<br>3.《SQL必知必会》<br>4.《数据库系统概念》<br>二.进阶系列：<br>5.《MySQL技术内幕——InnoDB存储引擎》<br>6.《Redis设计与实现》<br>7.《SQL语言艺术》<br>8.《SQL反模式》<br>9.《ZooKeeper：分布式过程协同技术详解》<br>三.强化系列：<br>10.《高可用MySQL（第2版）》<br>11.《高性能MySQL（第3版）》<br>12.《Oracle高效设计》<br>13.《Oracle编程艺术：深入理解数据库体系结构（第3版）》<br><br> </p>
+</blockquote>
+<blockquote>
+<h1 id="网盘下载链接"><a href="#网盘下载链接" class="headerlink" title="网盘下载链接"></a>网盘下载链接</h1><p>数据库必读18本技术书籍<br><a href="https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg" target="_blank" rel="noopener">https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg</a><br>提取码：9nbs<br>备注：文件比较大，网盘直接打开会显示损坏，里面已经整理并且压缩好，需要下载后才可以打。</p>
+</blockquote>
+<blockquote>
+<p>附java从入门到进阶推荐书籍50+本：<br><a href="https://pymlovelyq.github.io/2018/10/06/java/" target="_blank" rel="noopener">https://pymlovelyq.github.io/2018/10/06/java/</a><br><br>总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>随心而赏，重在分享。♥(ˆ◡ˆԅ)</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="极客侠栈 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="极客侠栈 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># </i>算法</a>
+          
+            <a href="/tags/面试/" rel="tag"># </i>面试</a>
+          
+            <a href="/tags/数据库/" rel="tag"># </i>数据库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/06/python/" rel="next" title="python从入门到进阶推荐书籍最全整理pdf分享附网盘链接已拿BT豆瓣offer">
+                <i class="fa fa-chevron-left"></i> python从入门到进阶推荐书籍最全整理pdf分享附网盘链接已拿BT豆瓣offer
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/06/machineLearning/" rel="prev" title="机器学习和python学习之路吐血整理技术书从入门到进阶(珍藏版)">
+                机器学习和python学习之路吐血整理技术书从入门到进阶(珍藏版) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="极客侠栈" />
+            
+              <p class="site-author-name" itemprop="name">极客侠栈</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com/nav.html" title="馨客栈" target="_blank">馨客栈</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com" title="MackXin" target="_blank">MackXin</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言：技术书阅读方法论"><span class="nav-number">1.</span> <span class="nav-text">前言：技术书阅读方法论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-速读一遍（最好在1-2天内完成）"><span class="nav-number">1.1.</span> <span class="nav-text">一.速读一遍（最好在1~2天内完成）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-精读一遍（在2周内看完）"><span class="nav-number">1.2.</span> <span class="nav-text">二.精读一遍（在2周内看完）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-实践（在整个过程中都要）"><span class="nav-number">1.3.</span> <span class="nav-text">三.实践（在整个过程中都要）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#从入门到进阶数据库书籍推荐理由："><span class="nav-number">2.</span> <span class="nav-text">从入门到进阶数据库书籍推荐理由：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-入门系列："><span class="nav-number">2.1.</span> <span class="nav-text">一.入门系列： </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-《MySQL必知必会》"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.《MySQL必知必会》 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-《SQL学习指南（第2版-修订版）》"><span class="nav-number">2.1.2.</span> <span class="nav-text">2. 《SQL学习指南（第2版 修订版）》 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-《SQL必知必会》"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.《SQL必知必会》 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-《数据库系统概念》"><span class="nav-number">2.1.4.</span> <span class="nav-text">4.《数据库系统概念》 </span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-进-阶系列"><span class="nav-number">2.2.</span> <span class="nav-text">二.进 阶系列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-《MySQL技术内幕——InnoDB存储引擎》"><span class="nav-number">2.2.1.</span> <span class="nav-text">5.《MySQL技术内幕——InnoDB存储引擎》 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-《Redis设计与实现》"><span class="nav-number">2.2.2.</span> <span class="nav-text">6. 《Redis设计与实现》 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-《SQL语言艺术》"><span class="nav-number">2.2.3.</span> <span class="nav-text">7.《SQL语言艺术》 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-《SQL反模式》"><span class="nav-number">2.2.4.</span> <span class="nav-text">8.《SQL反模式》 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-《ZooKeeper：分布式过程协同技术详解》"><span class="nav-number">2.2.5.</span> <span class="nav-text">9.  《ZooKeeper：分布式过程协同技术详解》</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-强-化系列"><span class="nav-number">2.3.</span> <span class="nav-text">三.强 化系列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#10-《高可用MySQL（第2版）》"><span class="nav-number">2.3.1.</span> <span class="nav-text">10.《高可用MySQL（第2版）》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-《高性能MySQL（第3版）》"><span class="nav-number">2.3.2.</span> <span class="nav-text">11.《高性能MySQL（第3版）》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-《Oracle高效设计》"><span class="nav-number">2.3.3.</span> <span class="nav-text">12. 《Oracle高效设计》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-《Oracle编程艺术：深入理解数据库体系结构（第3版）》"><span class="nav-number">2.3.4.</span> <span class="nav-text">13. 《Oracle编程艺术：深入理解数据库体系结构（第3版）》</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库必读书籍总结："><span class="nav-number">3.</span> <span class="nav-text">数据库必读书籍总结：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网盘下载链接"><span class="nav-number">4.</span> <span class="nav-text">网盘下载链接</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+         <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">极客侠栈</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
+<!-- ҳ����С���� -->
+<script type="text/javascript" src="/js/src/love.js"></script>

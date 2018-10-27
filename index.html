@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*��������ɫ*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*��Ӱ��ɫ*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*�ϱ߿���ɫ*/
+        border-left-color: #1E92FB;    /*��߿���ɫ*/
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="极客侠栈">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="极客侠栈">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="极客侠栈">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>极客侠栈</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">极客侠栈</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/06/machineLearning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="极客侠栈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="极客侠栈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/06/machineLearning/" itemprop="url">
+                  机器学习和python学习之路吐血整理技术书从入门到进阶(珍藏版)
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-06 10:36:31" itemprop="dateCreated datePublished" datetime="2018-10-06T10:36:31+08:00">2018-10-06</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-27 11:38:39" itemprop="dateModified" datetime="2018-10-27T11:38:39+08:00">2018-10-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p><strong>“机器学习／深度学习并不需要很多数学基础！”也许你在不同的地方听过不少类似这样的说法。对于鼓励数学基础不好的同学入坑机器学习来说，这句话是挺不错的。不过，机器学习理论是与统计学、概率论、计算机科学、算法等方面交叉的领域，对这些技术有一个全面的数学理解对理解算法的内部工作机制、获取好的结果是有必要的。机器学习确实需要对一些数学领域有深入理解，缺乏必要的数学知识，很可能在更深入的学习中不断遇到挫折，甚至导致放弃。<br>说的很多小伙伴恐怕心都凉了一半，或者已经开始打退堂鼓了。不要紧，山人自有妙法。下面就给大家分享一下，主要是一些资源（书籍或者视频课程）。人工智能（机器学习或数据挖掘等）中最最重要的数学就是线性代数与概率论（还有其他，但这两者比重最大）。</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>所以我找了个书单自学，电子书为主，顺便分享出来。使用电子书的形式是因为，个人偏好。即使我买了实体书，一旦找到了电子书，我马上就会把纸质书扔到床底下。如果侵犯了任何人的权益，烦请及时通知。</strong></p>
+</blockquote>
+<blockquote>
+<font color="black" size="4">前言： 技术书阅读方法论<br>一.速读一遍（最好在1~2天内完成）<br>人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。<br>对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。<br>二.精读一遍（在2周内看完）（并且记得看下面的博文）<br>有了前面速读的感觉，第二次看会有慢慢深刻了思想和意识的作用，具体为什么不要问我，去问30年后的神经大脑专家，现在人类可能还没有总结出为什么大脑对记忆的完全方法论，但是，就像我们专业程序员，打代码都是先实践，然后就渐渐懂了过程，慢慢懂了原理，所以第二遍读的时候稍微慢下来，2周内搞定。记住一句话：没看完一个章节后，总结一下这个章节讲了啥。很关键。<br>三.实践（在整个过程中都要）<br>实践的时候，要注意不用都去实践，最好看着书，敲下代码，把重点的内容敲一遍有个肌肉记忆就很不错了。<br>以及到自己做过的项目中去把每个有涉及的原理的代码，研究一遍，就可以了。</font>
+</blockquote>
+<blockquote>
+<p><strong> 百度网盘链接：<a href="https://pan.baidu.com/s/1wIL_5arbxhjvzWeyba89kA" target="_blank" rel="noopener">https://pan.baidu.com/s/1wIL_5arbxhjvzWeyba89kA</a><br>提取码：b379<br>备注：文件比较大，网盘直接打开会显示损坏，里面已经整理并且压缩好，需要下载后才可以打。</strong></p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/10/27/5bd3755f4c86b.png" alt="avatar"><br><img src="https://i.loli.net/2018/10/27/5bd360e423ba3.png" alt="avatar"><br><img src="https://i.loli.net/2018/10/27/5bd360eecae73.png" alt="avatar"><br><img src="https://i.loli.net/2018/10/27/5bd360f6d270b.png" alt="Alt text" title="optional title"><br><img src="https://i.loli.net/2018/10/27/5bd3610212d97.png" alt="Alt text" title="optional title"></p>
+<h2 id="一-数学基础"><a href="#一-数学基础" class="headerlink" title="一. 数学基础"></a>一. 数学基础</h2><p>1.微积分：《微积分学教程》 （F.M.菲赫金哥尔茨）俄罗斯的数学书<br><img src="https://i.loli.net/2018/10/27/5bd3755f549c8.png" alt="avatar"><br>2.线性代数：《Linear Algebra and Its Applications,Third Edition （David C.Lay）》讲得很实际，线性代数最重要的就是与实际应用相联系才能够理解其意义<br><img src="https://i.loli.net/2018/10/27/5bd3755f58374.png" alt="avatar"><br>3.概率与统计：《概率论与数理统计 （陈希孺）》或《概率论与数理统计（盛骤/谢式千/潘承毅）》这两本书都很不错</p>
+<pre><code>![3.1.png](https://i.loli.net/2018/10/27/5bd3d780336eb.png)
+</code></pre><p>4.随机过程：《应用随机过程:概率模型导论 （Sheldon M. Ross）》这本书已经出到第10版了<br>这四门是数学的基础，当然数学本身就是博大精深的。</p>
+<h2 id="二-机器学习与数据挖掘（偏理论）"><a href="#二-机器学习与数据挖掘（偏理论）" class="headerlink" title="二. 机器学习与数据挖掘（偏理论）"></a>二. 机器学习与数据挖掘（偏理论）</h2><p>1.《  统计学习方法 （李航）》<br><img src="https://i.loli.net/2018/10/27/5bd3d78f5f618.png" alt="3.2.png"></p>
+<p>2.《统计学习基础 （Trevor Hastie, Robert Tibshirani, Jerome Friedman）》</p>
+<p>3.《Pattern Recognition and Machine Learning （Christopher Bishop）》</p>
+<p>4.《Introduction to Machine Learning （Ethem Alpaydin）》（《机器学习导论》）</p>
+<p>6.《Data Mining （韩家炜） 》</p>
+<p>7.《现代模式识别 （孙即祥） 》</p>
+<p><img src="https://i.loli.net/2018/10/27/5bd3d8bc93803.png" alt="3.4.png"></p>
+<p>   个人觉得《统计学习方法》与《统计学习基础》这两本书是基础，后面的书内容相差不大，所以前两本书应该看，而入门的话，后面的书可以选1到2本精读，剩下的书可作参考。</p>
+<h2 id="三-智能算法（偏应用）"><a href="#三-智能算法（偏应用）" class="headerlink" title="三. 智能算法（偏应用）"></a>三. 智能算法（偏应用）</h2><p>1.《Web智能算法 （Haralambos Marmanis, Dmitry Babenko）》</p>
+<p>2.《集体智慧编程 （Toby Segaran）》</p>
+<p>3.《推荐系统实践 （项亮）》</p>
+<p><img src="https://i.loli.net/2018/10/27/5bd3da7d55414.png" alt="6.png"></p>
+<p>4.《数据之魅 （Pbilipp K.Janert）》</p>
+<p>这几本书均是从实践的角度讲解了机器学习中常用的算法，非常值得一看。<br>有人推荐，学习机器学习的话可以先读《统计学习方法》和《统计学习基础》打底，这样就包含了大部分的算法，然后再深入研究某个算法。</p>
+<h2 id="四-机器学习入门级："><a href="#四-机器学习入门级：" class="headerlink" title="四.机器学习入门级："></a>四.机器学习入门级：</h2><p>1.《数学之美》；作者吴军大家都很熟悉。这本书主要的作用是引起了我对机器学习和自然语言处理的兴趣。里面以极为通俗的语言讲述了数学在这两个领域的应用。</p>
+<p>2.《Programming Collective Intelligence》（中译本《集体智慧编程》）；作者Toby Segaran也是《BeautifulData : The Stories Behind Elegant Data Solutions》（《数据之美：解密优雅数据解决方案背后的故事》）的作者。这本书最大的优势就是里面没有理论推导和复杂的数学公式，是很不错的入门书。目前中文版已经脱销，对于有志于这个领域的人来说，英文的pdf是个不错的选择，因为后面有很多经典书的翻译都较差，只能看英文版，不如从这个入手。还有，这本书适合于快速看完，因为据评论，看完一些经典的带有数学推导的书后会发现这本书什么都没讲，只是举了很多例子而已。</p>
+<p>3.《Algorithms of the Intelligent Web》（中译本《智能web算法》）；作者Haralambos Marmanis、Dmitry Babenko。这本书中的公式比《集体智慧编程》要略多一点，里面的例子多是互联网上的应用，看名字就知道。不足的地方在于里面的配套代码是BeanShell而不是python或其他。总起来说，这本书还是适合初学者，与上一本一样需要快速读完，如果读完上一本的话，这一本可以不必细看代码，了解算法主要思想就行了。</p>
+<p>4.《统计学习方法》；作者李航，是国内机器学习领域的几个大家之一，曾在MSRA任高级研究员，现在华为诺亚方舟实验室。书中写了十个算法，每个算法的介绍都很干脆，直接上公式，是彻头彻尾的“干货书”。每章末尾的参考文献也方便了想深入理解算法的童鞋直接查到经典论文；本书可以与上面两本书互为辅助阅读。</p>
+<p>5.《Machine Learning》（《机器学习》）；作者TomMitchell[2]是CMU的大师，有机器学习和半监督学习的网络课程视频。这本书是领域内翻译的较好的书籍，讲述的算法也比《统计学习方法》的范围要大很多。据评论这本书主要在于启发，讲述公式为什么成立而不是推导；不足的地方在于出版年限较早，时效性不如PRML。但有些基础的经典还是不会过时的，所以这本书现在几乎是机器学习的必读书目。那么Mitchell的&lt;机器学习&gt;是经典的入门之作。当然，因为年代久远，很多新的模型都没有涉及到，但不影响他的经典性——入门级。</p>
+<p>6.《机器学习实战》对于程序员，想快速了解模型流程和优缺点的，甚至是实现模型的，那么<machine learning="" in="" action="">是我比较推荐的，现在已经有中文版了&lt;机器学习实战&gt;。这本书，提到了很多常见的模型，开始就是模型背景简介，之后是模型优缺点和应用场景、在接着算法实现和案例。而且，在书的最后，提及了一些比较切合时代的话题——大数据下机器学习。<br>《机器学习基础》对于想从事机器学习的入门人员，比较推荐一本有中文版的&lt;机器学习基础&gt;(Simon Rogers的，英国格拉斯哥大学计算机科学学院讲师)，这本书适合高年级本科生和研究生。从理论的角度，推导了各个算法，以及探究了各个模型的特性等。涉及数学和矩阵的地方，都有详细的参照。适合高端点的入门，看这本书，可以体会一下自己的数学和矩阵，有种必须要加强的感觉。<br><img src="https://i.loli.net/2018/10/27/5bd3dd03a9be0.png" alt="3.5.png"></machine></p>
+<p>7.《Mining of Massive Datasets》（《大数据》）；作者Anand Rajaraman[3]、Jeffrey David Ullman，Anand是Stanford的PhD。这本书介绍了很多算法，也介绍了这些算法在数据规模比较大的时候的变形。但是限于篇幅，每种算法都没有展开讲的感觉，如果想深入了解需要查其他的资料，不过这样的话对算法进行了解也足够了。还有一点不足的地方就是本书原文和翻译都有许多错误，勘误表比较长，读者要用心了。</p>
+<p>8.《Data Mining: Practical Machine Learning Tools and Techniques》（《数据挖掘：实用机器学习技术》）；作者Ian H. Witten 、Eibe Frank是weka的作者、新西兰怀卡托大学教授。他们的《ManagingGigabytes》[4]也是信息检索方面的经典书籍。这本书最大的特点是对weka的使用进行了介绍，但是其理论部分太单薄，作为入门书籍还可，但是，经典的入门书籍如《集体智慧编程》、《智能web算法》已经很经典，学习的话不宜读太多的入门书籍，建议只看一些上述两本书没讲到的算法。</p>
+<h2 id="五-机器学习深入级："><a href="#五-机器学习深入级：" class="headerlink" title="五.机器学习深入级："></a>五.机器学习深入级：</h2><p>1.《Pattern Classification》（《模式分类》第二版）；作者Richard O. Duda[5]、Peter E. Hart、David。模式识别的奠基之作，但对最近呈主导地位的较好的方法SVM、Boosting方法没有介绍，被评“挂一漏万之嫌”。</p>
+<p>2.《The Elements of Statistical Learning : Data Mining, Inference, andPrediction》，（《统计学习基础：数据挖掘、推理与预测》第二版）；作者RobertTibshirani、Trevor Hastie、Jerome Friedman。“这本书的作者是Boosting方法最活跃的几个研究人员，发明的Gradient Boosting提出了理解Boosting方法的新角度，极大扩展了Boosting方法的应用范围。这本书对当前最为流行的方法有比较全面深入的介绍，对工程人员参考价值也许要更大一点。另一方面，它不仅总结了已经成熟了的一些技术，而且对尚在发展中的一些议题也有简明扼要的论述。让读者充分体会到机器学习是一个仍然非常活跃的研究领域，应该会让学术研究人员也有常读常新的感受。”[7]</p>
+<ol start="3">
+<li>机器学习与数据挖掘（偏理论）</li>
+</ol>
+<blockquote>
+<p>百度网盘链接：<a href="https://pan.baidu.com/s/1wIL_5arbxhjvzWeyba89kA" target="_blank" rel="noopener">https://pan.baidu.com/s/1wIL_5arbxhjvzWeyba89kA</a><br>提取码：b379</p>
+</blockquote>
+<blockquote>
+<p>备注：文件比较大，网盘直接打开会显示损坏，里面已经整理并且压缩好，需要下载后才可以打。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/06/database/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="极客侠栈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="极客侠栈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/06/database/" itemprop="url">
+                  学习数据库从入门到进阶书籍pdf版吐血整理推荐（珍藏版）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-06 10:36:31" itemprop="dateCreated datePublished" datetime="2018-10-06T10:36:31+08:00">2018-10-06</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-27 13:29:17" itemprop="dateModified" datetime="2018-10-27T13:29:17+08:00">2018-10-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<h1 id="前言：技术书阅读方法论"><a href="#前言：技术书阅读方法论" class="headerlink" title="前言：技术书阅读方法论"></a>前言：技术书阅读方法论</h1><h2 id="一-速读一遍（最好在1-2天内完成）"><a href="#一-速读一遍（最好在1-2天内完成）" class="headerlink" title="一.速读一遍（最好在1~2天内完成）"></a>一.速读一遍（最好在1~2天内完成）</h2><p>人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。<br> 对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。</p>
+<h2 id="二-精读一遍（在2周内看完）"><a href="#二-精读一遍（在2周内看完）" class="headerlink" title="二.精读一遍（在2周内看完）"></a>二.精读一遍（在2周内看完）</h2><p>有了前面速读的感觉，第二次看会有慢慢深刻了思想和意识的作用，具体为什么不要问我，去问30年后的神经大脑专家，现在人类可能还没有总结出为什么大脑对记忆的完全方法论，但是，就像我们专业程序员，打代码都是先实践，然后就渐渐懂了过程，慢慢懂了原理，所以第二遍读的时候稍微慢下来，2周内搞定。记住一句话：没看完一个章节后，总结一下这个章节讲了啥。很关键。</p>
+<h2 id="三-实践（在整个过程中都要）"><a href="#三-实践（在整个过程中都要）" class="headerlink" title="三.实践（在整个过程中都要）"></a>三.实践（在整个过程中都要）</h2><p>实践的时候，要注意不用都去实践，最好看着书，敲下代码，把重点的内容敲一遍有个肌肉记忆就很不错了。<br> 以及到自己做过的项目中去把每个有涉及的原理的代码，研究一遍，就可以了</p>
+</blockquote>
+<blockquote>
+<p><strong>数据库必读18本技术书籍网盘链接：       <a href="https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg" target="_blank" rel="noopener">https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg</a><br>提取码：9nbs<br>备注：文件比较大，网盘直接打开会显示损坏，里面已经整理并且压缩好，需要下载后才可以打。</strong></p>
+</blockquote>
+<blockquote>
+<p>软件开发者编写代码，最终都是要处理数据，因此数据库是必备技能。<br>  实际上，学习数据库并不需要这么从懵圈到放弃。最近，美团•大众点评内部成立了数据库俱乐部，多位一线工程师经过一番讨论，总结出影响过自己成长的9本数据库图书，由浅入深，希望能对同学们有所帮助。</p>
+</blockquote>
+<blockquote>
+<p>数据库必读书籍总结：<br>一.入门：<br>1.《MySQL必知必会》<br>2.《SQL学习指南（第2版 修订版） 》<br>3.《SQL必知必会》<br>4.《数据库系统概念》<br>二.进 阶<br>5.《MySQL技术内幕——InnoDB存储引擎》<br>6.《Redis设计与实现》<br>7.《SQL语言艺术》<br>8.《SQL反模式》<br>9.《ZooKeeper：分布式过程协同技术详解》<br>三.强 化<br>10.《高可用MySQL（第2版）》<br>11.《高性能MySQL（第3版）》<br>12.《Oracle高效设计》<br>13.《Oracle编程艺术：深入理解数据库体系结构（第3版）》<br><br> </p>
+</blockquote>
+<h1 id="从入门到进阶数据库书籍推荐理由："><a href="#从入门到进阶数据库书籍推荐理由：" class="headerlink" title="从入门到进阶数据库书籍推荐理由："></a>从入门到进阶数据库书籍推荐理由：</h1><h2 id="一-入门系列："><a href="#一-入门系列：" class="headerlink" title="一.入门系列： "></a>一.入门系列： <br></h2><h3 id="1-《MySQL必知必会》"><a href="#1-《MySQL必知必会》" class="headerlink" title="1.《MySQL必知必会》 "></a>1.《MySQL必知必会》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc414d5.jpg" alt="2.jpg"></p>
+<p>这本书英文原版名是很标题党的《Teach Yourself SQL in 10 Minutes》，却是最好的数据库入门书，在Amazon上长期排在数据库销售榜首，建议想快速了解数据库原理和MySQL的新手阅读。快餐性质，简洁明快，小开本，而且很薄，比较好读。有前端工程师表示自己数据库方面只读了这本书，就足以应付大部分开发任务了。</p>
+<h3 id="2-《SQL学习指南（第2版-修订版）》"><a href="#2-《SQL学习指南（第2版-修订版）》" class="headerlink" title="2. 《SQL学习指南（第2版 修订版）》 "></a>2. 《SQL学习指南（第2版 修订版）》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc538ea.jpg" alt="1.jpg"></p>
+<p>如果你只想学怎么写SQL，那可以读这本书。O’Reilly动物书系列，品质还是很有保证的。</p>
+<h3 id="3-《SQL必知必会》"><a href="#3-《SQL必知必会》" class="headerlink" title="3.《SQL必知必会》 "></a>3.《SQL必知必会》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc550f2.jpg" alt="3.jpg"></p>
+<p>SQL 是目前使用最为广泛的数据库语言之一。本书没有涉及理论，而是从实践出发，由浅入深地讲解了广大读者所必需的SQL 知识，适用于各种主流数据库。实例丰富，便于查阅。<br>本书涉及不同平台上数据的排序、过滤和分组，以及表、视图、联结、子查询、游标、存储过程和触发器等内容，通过本书读者可以系统地学习到SQL 的知识和方法。 </p>
+<h3 id="4-《数据库系统概念》"><a href="#4-《数据库系统概念》" class="headerlink" title="4.《数据库系统概念》 "></a>4.《数据库系统概念》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc626f5.jpg" alt="4.jpg"></p>
+<p>本书是数据库系统方面的经典教材之一，其内容由浅入深，既包含数据库系统基本概念，又反映数据库技术新进展。它被国际上许多著名大学所采用，包括斯坦福大学、耶鲁大学、得克萨斯大学、康奈尔大学、伊利诺伊大学等。</p>
+<p><br></p>
+<h2 id="二-进-阶系列"><a href="#二-进-阶系列" class="headerlink" title="二.进 阶系列"></a>二.进 阶系列</h2><h3 id="5-《MySQL技术内幕——InnoDB存储引擎》"><a href="#5-《MySQL技术内幕——InnoDB存储引擎》" class="headerlink" title="5.《MySQL技术内幕——InnoDB存储引擎》 "></a>5.《MySQL技术内幕——InnoDB存储引擎》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc57ce6.jpg" alt="5.jpg"></p>
+<p>怎么说，每个行业都有几本被翻来翻去的“街书”，而本书就是MySQL的“街书”，该书目前已经有了三版。从源代码的角度深度解析了InnoDB的体系结构、实现原理、工作机制，并给出了大量最佳实践，能帮助你系统而深入地掌握InnoDB。注重实战，全书辅有大量的案例，可操作性极强。</p>
+<h3 id="6-《Redis设计与实现》"><a href="#6-《Redis设计与实现》" class="headerlink" title="6. 《Redis设计与实现》 "></a>6. 《Redis设计与实现》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc53616.jpg" alt="6.jpg"></p>
+<p>Redis是目前应用最广泛的NoSQL数据库。本书系统而全面地描述了Redis内部运行机制，图示丰富，描述清晰，并给出大量参考信息，是NoSQL数据库开发人员案头必备。</p>
+<h3 id="7-《SQL语言艺术》"><a href="#7-《SQL语言艺术》" class="headerlink" title="7.《SQL语言艺术》 "></a>7.《SQL语言艺术》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc5ed4c.jpg" alt="7.jpg"></p>
+<p>本书分为12章，每一章包含许多原则或准则，并通过举例的方式对原则进行解释说明。这些例子大多来自于实际案例，对九种SQL经典查询场景以及其性能影响讨论，非常便于实践，为你的实际工作提出了具体建议。本书适合SQL数据库开发者、软件架构师，也适合DBA，尤其是数据库应用维护人员阅读。</p>
+<h3 id="8-《SQL反模式》"><a href="#8-《SQL反模式》" class="headerlink" title="8.《SQL反模式》 "></a>8.《SQL反模式》 <br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc5813a.jpg" alt="8.jpg"></p>
+<p>它介绍了如何避免在SQL的使用和开发中陷入一些常见却经常被忽略的误区。它通过讲述各种具体的案例，以及开发人员和使用人员在面对这些案例时经常采用的错误解决方案，来介绍如何识别、利用这些陷阱，以及面对问题时正确的解决手段。另外，《SQL反模式》还涉及了SQL的各级范式和针对它们的正确理解。 </p>
+<h3 id="9-《ZooKeeper：分布式过程协同技术详解》"><a href="#9-《ZooKeeper：分布式过程协同技术详解》" class="headerlink" title="9.  《ZooKeeper：分布式过程协同技术详解》"></a>9.  《ZooKeeper：分布式过程协同技术详解》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc7ff44.jpg" alt="9.jpg"></p>
+<p>ZooKeeper是Google的Chubby项目的开源实现，它曾经作为Hadoop的子项目，在大数据领域得到广泛应用。ZooKeeper以Fast Paxos算法为基础，同时为了解决活锁问题，对Fast Paxos算法进行了优化，因此也可以广泛用于大数据之外的其他分布式系统，为大型分布式系统提供可靠的协作处理功能。这本书是实际开发和维护中的一本最佳参考书籍。</p>
+<h2 id="三-强-化系列"><a href="#三-强-化系列" class="headerlink" title="三.强 化系列"></a>三.强 化系列</h2><h3 id="10-《高可用MySQL（第2版）》"><a href="#10-《高可用MySQL（第2版）》" class="headerlink" title="10.《高可用MySQL（第2版）》"></a>10.《高可用MySQL（第2版）》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3eecc7f1e9.jpg" alt="10.jpg"></p>
+<p>主要讲解真实环境下如何使用MySQL的复制、集群和监控特性，揭示MySQL可靠性和高可用性的方方面面。此书定位于解决MySQL数据库的常见应用瓶颈，在保持MySQL持续可用性的前提下，挖潜各种提高性能的解决方案。</p>
+<h3 id="11-《高性能MySQL（第3版）》"><a href="#11-《高性能MySQL（第3版）》" class="headerlink" title="11.《高性能MySQL（第3版）》"></a>11.《高性能MySQL（第3版）》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3ef990a245.jpg" alt="11.jpg"></p>
+<p>作者推荐的工具、实战案例及经验过的诊断技术，可大大提高性能急救技能，以及加深对MySQL本质的理解。而且本书将数据库结构的客观方面纳入思考，此外还增补了MySQL高可用性及云特性。</p>
+<h3 id="12-《Oracle高效设计》"><a href="#12-《Oracle高效设计》" class="headerlink" title="12. 《Oracle高效设计》"></a>12. 《Oracle高效设计》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3ef98ef95d.jpg" alt="12.jpg"></p>
+<p>这是一本程序员普遍反映收益比较大的一本书，作者Thomas Kyte，Oracle专业领域世界上最权威的专家之一，他是Oracle核心技术小组副主席，兼《Oracle Magazine》及其在线论坛“Ask Tom”专栏作家。<br>本书对Oracle及数据库的知识进行了全面深入的讲解，是一本关于Oracle的高级手册。本书内容翔实，实例丰富，语言流畅且浅显易懂，适合作为从事Oracle开发人员的参考手册。</p>
+<h3 id="13-《Oracle编程艺术：深入理解数据库体系结构（第3版）》"><a href="#13-《Oracle编程艺术：深入理解数据库体系结构（第3版）》" class="headerlink" title="13. 《Oracle编程艺术：深入理解数据库体系结构（第3版）》"></a>13. 《Oracle编程艺术：深入理解数据库体系结构（第3版）》<br></h3><p><img src="https://i.loli.net/2018/10/27/5bd3ef993284a.jpg" alt="13.jpg"></p>
+<p>对于想学习SQL、PL/SQL的书，这是一本必读之物，除此之外，该书从开发的角度详细解读了整个Oracle体系结构，深入浅出，绝对佳作。</p>
+<h1 id="数据库必读书籍总结："><a href="#数据库必读书籍总结：" class="headerlink" title="数据库必读书籍总结："></a>数据库必读书籍总结：</h1><blockquote>
+<p>一.入门系列：<br>1.《MySQL必知必会》<br>2.《SQL学习指南（第2版 修订版） 》<br>3.《SQL必知必会》<br>4.《数据库系统概念》<br>二.进阶系列：<br>5.《MySQL技术内幕——InnoDB存储引擎》<br>6.《Redis设计与实现》<br>7.《SQL语言艺术》<br>8.《SQL反模式》<br>9.《ZooKeeper：分布式过程协同技术详解》<br>三.强化系列：<br>10.《高可用MySQL（第2版）》<br>11.《高性能MySQL（第3版）》<br>12.《Oracle高效设计》<br>13.《Oracle编程艺术：深入理解数据库体系结构（第3版）》<br><br> </p>
+</blockquote>
+<blockquote>
+<h1 id="网盘下载链接"><a href="#网盘下载链接" class="headerlink" title="网盘下载链接"></a>网盘下载链接</h1><p>数据库必读18本技术书籍<br><a href="https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg" target="_blank" rel="noopener">https://pan.baidu.com/s/12D2TcuKSWcI0Tbpoaudlwg</a><br>提取码：9nbs<br>备注：文件比较大，网盘直接打开会显示损坏，里面已经整理并且压缩好，需要下载后才可以打。</p>
+</blockquote>
+<blockquote>
+<p>附java从入门到进阶推荐书籍50+本：<br><a href="https://pymlovelyq.github.io/2018/10/06/java/" target="_blank" rel="noopener">https://pymlovelyq.github.io/2018/10/06/java/</a><br><br>总结：天下没有不劳而获的果实，望各位年轻的朋友，想学技术的朋友，在决心扎入技术道路的路上披荆斩棘，把书弄懂了，再去敲代码，把原理弄懂了，再去实践，将会带给你的人生，你的工作，你的未来一个美梦。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/06/python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="极客侠栈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="极客侠栈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/06/python/" itemprop="url">
+                  python从入门到进阶推荐书籍最全整理pdf分享附网盘链接已拿BT豆瓣offer
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-06 10:36:31" itemprop="dateCreated datePublished" datetime="2018-09-06T10:36:31+08:00">2018-09-06</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-27 03:52:12" itemprop="dateModified" datetime="2018-10-27T03:52:12+08:00">2018-10-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p><strong> 从八月底开始找工作，短短的一星期多一些，面试了9家公司，拿到5份Offer，可能是因为我所面试的公司都是些创业性的公司吧，不过还是感触良多，因为学习Python的时间还很短，没想到还算比较容易的找到了工作，就把自己找的python资源和大家分享一下，希望为学习Python找工作的小伙伴们提供些许帮助。<br>作为Python爱好者，广泛搜集了关于Python的书籍，具体包括数据挖掘、人工智能、网络编程等，范围广，资料全面，多为可编辑的pdf版本，不少都是各学科领域Python的书籍。当然论坛也有这些书籍，但是有的书籍较为难找，且大多数需要论坛币。为此，本人花费大量时间搜集整理Python书籍，并上传以下超过100本书籍，希望能够为Python爱 好者节省搜集书籍的时间，相互交流，共同学习。<br>Python具有一些特征，使其成为第一种编程语言的接近完美的选择。Python基本结构简单、干净、设计精良，使学生能够专注于算法思维和程序设计的主要技能，而不会陷晦涩难解的语言细节。在Python中学习的概念可以直接传递给后续学习的系统语言（如C ++和Java）。但Python不是一种“玩具语言”，它是一种现实世界的生产语言，可以在几乎每个编程平台上免费提供，并且具有自己易于使用的集成编程环境。最好的是，Python让学习编程又变得有趣了。</strong></p>
+</blockquote>
+<blockquote>
+<p><font color="black" size="4">前言： 技术书阅读方法论<br>一.速读一遍（最好在1~2天内完成）<br>人的大脑记忆力有限，在一天内快速看完一本书会在大脑里留下深刻印象，对于之后复习以及总结都会有特别好的作用。<br>对于每一章的知识，先阅读标题，弄懂大概讲的是什么主题，再去快速看一遍，不懂也没有关系，但是一定要在不懂的地方做个记号，什么记号无所谓，但是要让自己后面再看的时候有个提醒的作用，看看第二次看有没有懂了些。<br><br>二.精读一遍（在2周内看完）（并且记得看下面的博文）<br>有了前面速读的感觉，第二次看会有慢慢深刻了思想和意识的作用，具体为什么不要问我，去问30年后的神经大脑专家，现在人类可能还没有总结出为什么大脑对记忆的完全方法论，但是，就像我们专业程序员，打代码都是先实践，然后就渐渐懂了过程，慢慢懂了原理，所以第二遍读的时候稍微慢下来，2周内搞定。记住一句话：没看完一个章节后，总结一下这个章节讲了啥。很关键。<br><br>三.实践（在整个过程中都要）<br>实践的时候，要注意不用都去实践，最好看着书，敲下代码，把重点的内容敲一遍有个肌肉记忆就很不错了。<br>以及到自己做过的项目中去把每个有涉及的原理的代码，研究一遍，就可以了。<br><br></font></p>
+</blockquote>
+<blockquote>
+<p>百度网盘链接：<a href="https://pan.baidu.com/s/1yujN2BoaObDJYBFKqcghkg" target="_blank" rel="noopener">https://pan.baidu.com/s/1yujN2BoaObDJYBFKqcghkg</a><br>提取码：9c4n<br>备注：里面已经顺便整理压缩好，需要下载后才可以打开，网盘直接打开会显示损坏。<br></p>
+</blockquote>
+<blockquote>
+<p><strong> 首先推荐大家通过这两本书来入门数据挖掘这个领域，python数据挖掘这本书较容易，还花了很大的篇幅来讲python基础，而python数据挖掘入门与实践则直接从实例讲起，需要读者有一定的python基础。 　　数据挖掘主要是通过python或者Ｒ语言来实现的，因为这两门语言有它们独特的优势，比如包含大量的函数式编程接口，高效的模块等等，这些都使它们非常适合用来进行数据挖掘和数据分析。所以都要求编程者要有这方面的知识体系。但是，说到底语言只是一个工具，真正要在一门领域取得建树，还是要靠编程者的思维能力和实践能力，比如算法水平和编码或者debug（项目）能力。不过，对python这个强大工具有很深入的了解，会对数据挖掘的学习有事半功倍的效果。 　　推荐使用anaconda作为python的编译库，里面包括了大量的实用模块，比如numpy(科学计算，如矩阵，二维数组，与表格最为相似的数据结构),pandas(数据分析，如数据框（虚拟内存数据库），系列),Scipy(科学计算，向量化思想，包括符号计算和函数向量化),scikit-learn(用于机器学习，数据挖掘，数据分析，六大功能：分类，回归，聚类，降维，模型选择，预处理),Matplotlib,Bokeh(数据分析及可视化)等等。这些都有助于进行数据挖掘和数据分析。 　　数据挖掘和数据分析等领域包含了大量的算法，比如K-Means,DBSCAN,Apriori,kNN,朴素贝叶斯，BP神经网络,CART，决策树等算法，这对编程者的算法能力和思维能力产生了极大的挑战。只有掌握了这些算法，才能更好地，更高效地，更快速地实现目标。如果有ACM经验的话，学起来应该会更加快速和适应。这些算法，我觉得结合实际例子来学习可能更加容易理解，比如用决策树来预测获胜球队，使用朴素贝叶斯进行社会媒体挖掘，用神经网络破解验证码，用深度学习方法为图像中的物体进行分类。结合实例的话，可以更好地去学习,理解和实践。</strong></p>
+</blockquote>
+<blockquote>
+<p><strong> 最后给大家推荐后续的学习路线，可以去kaggle上参加数据挖掘比赛，或者参考学习别人的优秀项目。还可以去coursera上面学习数据挖掘的相关课程，进一步提高自己的能力和拓展自己的视野。</strong></p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/10/27/5bd360e423ba3.png" alt="avatar"><br><img src="https://i.loli.net/2018/10/27/5bd360eecae73.png" alt="avatar"><br><img src="https://i.loli.net/2018/10/27/5bd360f6d270b.png" alt="Alt text" title="optional title"><br><img src="https://i.loli.net/2018/10/27/5bd3610212d97.png" alt="Alt text" title="optional title"></p>
+<blockquote>
+<p><strong> 1《《区块链中文词典》维京&amp;甲子》PDF版.pdf<br>2《Beautiful_Soup中文文档》PDF版.pdf<br>3《Head_First_Python（中文版）》PDF版.pdf<br>4《Intermediate_Python中文译本》PDF版.pdf<br>5《Keras中文手册》PDF版.pdf<br>6《Node.js区块链开发》PDF版.pdf<br>7《NumPy攻略<strong>Python科学计算与数据分析_［（印尼）IvanIdris著；张崇明译］［人民邮电出版社］［2013.10］［174页］》PDF版.pdf<br>8《Phthon编程金典》PDF版.pdf<br>9《Python3程序开发指南（美）萨默菲尔德.扫描版》PDF版.pdf<br>10《Python3网络爬虫数据采集》PDF版.pdf<br>11《Python100经典练习题》PDF版.pdf<br>12《python_by_Liao》PDF版.pdf<br>13《python_cookbook（第3版）高清中文完整版》PDF版.pdf<br>14《Python_Web开发：测试驱动方法》PDF版.pdf<br>15《PythonWeb开发实战pdf解压密码》PDF版.pdf<br>16《Python_Web开发实战》PDF版.pdf<br>17《Python_文本处理指南［经典］》PDF版.pdf<br>18《Python文本处理指南［经典］pdf解压密码》PDF版.pdf<br>19《python cookbook(第3版)高清中文完整版(###)》PDF版.pdf<br>20《PYTHON QT GUI快速编程 PYQT编程指南 ,马克·萨默菲尔德 ,P444 ,2016.08》PDF版.pdf<br>21《Python编程：从入门到实践(#)》PDF版.pdf<br>22《Python编程初学者指南》PDF版.pdf<br>23《Python编程导论第2版_2018（#）》PDF版.pdf<br>24《Python编程快速上手—让繁琐工作自动化_PDF中文高清晰完整版》PDF版.pdf<br>25《Python编程快速上手</strong>让繁琐工作自动化》PDF版.pdf<br>26《Python编程入门  第3版》PDF版.pdf<br>27《Python编程入门经典》PDF版.pdf<br>28《Python编程实战<strong>运用设计模式、并发和程序库创建高质量程序<em>PDF电子书下载</em>带书签目录<em>完整版》PDF版.pdf<br>29《python标准库》PDF版.pdf<br>30《Python参考手册(第4版)》PDF版.pdf<br>31《Python程序员指南》PDF版.pdf<br>32《Python初学教程：《简明Python教程》》PDF版.pdf<br>33《Python地理空间分析指南（第2版）》PDF版.pdf<br>34《Python高级编程（清华）》PDF版.pdf<br>35《Python高级编程第2版</em>张亮 阿信（译）_人民邮电出版社_2017-10_v2_完整版》PDF版.pdf<br>36《Python高性能编程》PDF版.pdf<br>37《Python核心编程第3版中文版》PDF版.pdf<br>38《Python核心编程中文》PDF版.pdf<br>39《Python灰帽子——黑客与逆向工程师的Python编程之道》PDF版.pdf<br>40《Python灰帽子》PDF版.pdf<br>41《PYTHON机器学习及实践－从零开始通往KAGGLE竞赛之路》PDF版.pdf<br>42《Python基础教程（第3版）（#）》PDF版.pdf<br>43《Python技术参考大全》PDF版.pdf<br>44《Python金融大数据分析》PDF版.pdf<br>45《Python进阶（Intermediate_Python）<em>中文PDF彩色版》PDF版.pdf<br>46《Python开发技术详解》PDF版.pdf<br>47《Python开发实战(PDF版)》PDF版.pdf<br>48《Python开发实战》PDF版.pdf<br>49《Python科学计算(#)》PDF版.pdf<br>50《Python科学计算张若愚》PDF版.pdf<br>51《PYTHON面向对象编程指南 [（美）STEVEN F.LOTT著；张心韬，兰亮译][人民邮电出版》PDF版.pdf<br>52《Python爬虫开发与项目实战》PDF版.pdf<br>53《Python入门经典</em>以解决计算问题为导向的Python编程》PDF版.pdf<br>54《Python数据处理(###)》PDF版.pdf<br>55《Python数据处理》PDF版.pdf<br>56《Python数据分析基础》PDF版.pdf<br>57《Python数据分析基础教程：NumPy学习指南（第2版）(1)》PDF版.pdf<br>58《Python数据分析基础教程：NumPy学习指南（第2版）》PDF版.pdf<br>59《Python数据分析实战_2016版》PDF版.pdf<br>60《Python数据科学手册》PDF版.pdf<br>61《PYTHON数据可视化编程实战》PDF版.pdf<br>62《PYTHON数据可视化编程实战_13720859(1)》PDF版.pdf<br>63《PYTHON数据可视化编程实战<em>13720859》PDF版.pdf<br>64《Python网络编程基础》PDF版.pdf<br>65《Python网络数据采集》PDF版.pdf<br>66《Python学习手册(第4版)》PDF版.pdf<br>67《Python学习手册（第3版）》PDF版.pdf<br>68《Python学习手册（第4版）》PDF版.pdf<br>69《python 学习资料  》PDF版.pdf<br>70《Python语言及其应用》PDF版.pdf<br>71《Python语言入门》PDF版.pdf<br>72《Python源码剖析-深度探索动态语言核心技术》PDF版.pdf<br>73《Scikit－Learn</em>教學：Python_與機器學習<em>（Article）》PDF版.pdf<br>74《Selenium 2自动化测试实战  基于Python语言》PDF版.pdf<br>75《TensorFlow实践与智能系统》PDF版.pdf<br>76《Tensorflow 实战Google深度学习框架》PDF版.pdf<br>77《wxPython实战(中文版）》PDF版.pdf<br>78《白话深度学习与TensorFlow》PDF版.pdf<br>79《贝叶斯思维统计建模的PYTHON学习法》PDF版.pdf<br>80《笨办法学 Python(第四版）》PDF版.pdf<br>81《编程小白的第一本python入门书》PDF版.pdf<br>82《编写高质量代码 改善Python程序的91个建议》PDF版.pdf<br>83《常用数据挖掘算法总结及Python实现》PDF版.pdf<br>84《从Excel到Python——数据分析进阶指南》PDF版.pdf<br>85《从Python开始学编程》PDF版.pdf<br>86《大数据交易区块链技术应用标准》PDF版.pdf<br>87《机器学习numpy和pandas基础》PDF版.pdf<br>88《机器学习实战》PDF版.pdf<br>89《基于Python实现的微信好友数据分析》PDF版.pdf<br>90《简明Python教程（#）》PDF版.pdf<br>91《精通Python设计模式</em>带索引书签目录》PDF版.pdf<br>92《精通比特币》PDF版.pdf<br>93《可爱的Python脚本语言入门精品文章》PDF版.pdf<br>94《利用Python进行数据分析(###)》PDF版.pdf<br>95《量化投资以Python为工具》PDF版.pdf<br>96《流畅的python》PDF版.pdf<br>97《轻量级Django_，Julia_Elman_，P218_，2016.10》PDF版.pdf<br>98《区块链：互联网的诗和远方》PDF版.pdf<br>99《区块链  从数字货币到信用社会》PDF版.pdf<br>100《区块链革命》PDF版.pdf<br>101《区块链行业词典-甲子光年+维京资本 2018.02》PDF版.pdf<br>102《区块链技术-在线教育共享生态的基石》PDF版.pdf<br>103《区块链技术——通往未来的虫洞》PDF版.pdf<br>104《区块链 将如何重新定义世界》PDF版.pdf<br>105《区块链社会》PDF版.pdf<br>106《区块链  新经济蓝图及导读》PDF版.pdf<br>107《社交网站的数据挖掘与分析_中文版》PDF版.pdf<br>108《深度学习-无水印-中文版》PDF版.pdf<br>109《深入Python3中文版》PDF版.pdf<br>110《数据结构与算法</strong>Python语言描述<em>裘宗燕编著</em>北京：机械工业出版社_，_2016.01_P346》PDF版.pdf<br>111《数据科学入门(1)》PDF版.pdf<br>112《数据科学入门》PDF版.pdf<br>113《腾讯区块链白皮书》PDF版.pdf<br>114《图说区块链，区块链革命，区块链社会，区块链技术驱动金融，区块链重塑经济与世界6本》PDF版.pdf<br>115《图说区块链》PDF版.pdf<br>116《网络爬虫－Python和数据分析》PDF版.pdf<br>117《以太坊白皮书（中文）》PDF版.pdf<br>118《用Python进行自然语言处理(中文翻译NLTK)》PDF版.pdf<br>119《用Python写网络爬虫》PDF版.pdf<br>121《与孩子一起学编程（第一版）》PDF版.pdf<br>122《征服PYTHON-语言基础与典型应用》PDF版.pdf<br>123《中国区块链技术和应用发展白皮书》PDF版.pdf
+</strong></p>
+</blockquote>
+<blockquote>
+<p><strong> 百度网盘链接：<a href="https://pan.baidu.com/s/1yujN2BoaObDJYBFKqcghkg" target="_blank" rel="noopener">https://pan.baidu.com/s/1yujN2BoaObDJYBFKqcghkg</a><br>提取码：9c4n
+</strong></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="极客侠栈" />
+            
+              <p class="site-author-name" itemprop="name">极客侠栈</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com/nav.html" title="馨客栈" target="_blank">馨客栈</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mackxin.com" title="MackXin" target="_blank">MackXin</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+         <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">极客侠栈</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
+<!-- ҳ����С���� -->
+<script type="text/javascript" src="/js/src/love.js"></script>
