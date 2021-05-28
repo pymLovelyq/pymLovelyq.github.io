@@ -24,10 +24,10 @@
         <category>博客</category>
       </categories>
       <tags>
-        <tag>算法</tag>
-        <tag>面试</tag>
         <tag>C语言</tag>
         <tag>C++</tag>
+        <tag>算法</tag>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
@@ -93,10 +93,10 @@
         <category>博客</category>
       </categories>
       <tags>
-        <tag>算法</tag>
-        <tag>面试</tag>
         <tag>C语言</tag>
         <tag>C++</tag>
+        <tag>算法</tag>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
@@ -107,10 +107,10 @@
         <category>博客</category>
       </categories>
       <tags>
-        <tag>安卓</tag>
-        <tag>Java</tag>
         <tag>算法</tag>
         <tag>面试</tag>
+        <tag>安卓</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -134,9 +134,9 @@
         <category>博客</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>算法</tag>
         <tag>面试</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
